@@ -1,7 +1,5 @@
+import Image from "next/image";
 import ServiceCard from "@/components/ServiceCard";
-import TestimonialCard from "@/components/TestimonialCard";
-import IndustryCard from "@/components/IndustryCard";
-import InsightCard from "@/components/InsightCard";
 
 export default function Home() {
   return (
@@ -163,10 +161,11 @@ export default function Home() {
             {/* Right Content - Professional Image */}
             <div className="relative h-full min-h-[500px]">
               <div className="absolute inset-0 rounded-2xl overflow-hidden">
-                <img 
+                <Image 
                   src="/images/businessImage.png" 
                   alt="Professional Business Consultation" 
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
                 />
                 {/* Left Fade Overlay */}
                 {/* <div className="absolute inset-0 bg-gradient-to-r from-[#2d1b69] via-[#2d1b69]/80 via-[#2d1b69]/40 to-transparent rounded-2xl"></div> */}
@@ -185,13 +184,13 @@ export default function Home() {
             {/* Left Content - Team Image Placeholder */}
             <div className="relative">
               <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8">
-                <div className="h-80 bg-gradient-to-br from-[#241940] to-[#2d1b69] rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    {/* <svg className="w-16 h-16 text-cyan-400 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M16 4C18.2 4 20 5.8 20 8C20 10.2 18.2 12 16 12C13.8 12 12 10.2 12 8C12 5.8 13.8 4 16 4M16 14C20.4 14 24 15.8 24 18V20H8V18C8 15.8 11.6 14 16 14M8.5 4C10.7 4 12.5 5.8 12.5 8C12.5 10.2 10.7 12 8.5 12C6.3 12 4.5 10.2 4.5 8C4.5 5.8 6.3 4 8.5 4M8.5 14C12.9 14 16.5 15.8 16.5 18V20H0V18C0 15.8 3.6 14 8.5 14Z"/>
-                    </svg> */}
-                    <img src="/images/team-image.jpg" alt="Professional Team Image" className="w-full h-full object-cover rounded-xl" />
-                  </div>
+                                <div className="relative h-80 bg-gradient-to-br from-[#241940] to-[#2d1b69] rounded-xl overflow-hidden">
+                  <Image 
+                    src="/images/team-image.jpg" 
+                    alt="Professional Team Image" 
+                    fill
+                    className="object-cover" 
+                  />
                 </div>
               </div>
             </div>
