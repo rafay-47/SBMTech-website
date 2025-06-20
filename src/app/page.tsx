@@ -5,9 +5,26 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#2d1b69] via-[#241940] to-[#1e1537] text-white py-24 overflow-hidden">
+      <section className="relative text-white py-24 overflow-hidden min-h-screen flex items-center">
+        {/* Video Background */}
+        <div className="absolute inset-0 z-0">
+          <video 
+            autoPlay 
+            muted 
+            loop 
+            playsInline
+            className="w-full h-full object-cover"
+            suppressHydrationWarning={true}
+          >
+            <source src="/videos/banner.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+          {/* Video Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2d1b69]/70 via-[#241940]/60 to-[#1e1537]/70"></div>
+        </div>
+
         {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
+        {/* <div className="absolute inset-0 opacity-5 z-10">
           <div className="absolute right-0 top-0 w-full h-full">
             <svg viewBox="0 0 100 100" className="w-full h-full">
               <defs>
@@ -18,22 +35,22 @@ export default function Home() {
               <rect width="100" height="100" fill="url(#heroGrid)" />
             </svg>
           </div>
-        </div>
+        </div> */}
         
         {/* Floating Security Icons */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-20 left-10 w-8 h-8 text-cyan-400/30 animate-pulse">
+        <div className="absolute inset-0 overflow-hidden z-20">
+          <div className="absolute top-20 left-10 w-8 h-8 text-cyan-400/50 animate-pulse">
             <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1Z"/></svg>
           </div>
-          <div className="absolute top-40 right-20 w-6 h-6 text-purple-400/30 animate-bounce" style={{animationDelay: '1s'}}>
+          <div className="absolute top-40 right-20 w-6 h-6 text-purple-400/50 animate-bounce" style={{animationDelay: '1s'}}>
             <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.5 16,12.1 16,12.7V16.2C16,16.8 15.4,17.3 14.8,17.3H9.2C8.6,17.3 8,16.8 8,16.2V12.7C8,12.1 8.6,11.5 9.2,11.5V10C9.2,8.6 10.6,7 12,7Z"/></svg>
           </div>
-          <div className="absolute bottom-20 left-1/4 w-7 h-7 text-blue-400/30 animate-pulse" style={{animationDelay: '2s'}}>
+          <div className="absolute bottom-20 left-1/4 w-7 h-7 text-blue-400/50 animate-pulse" style={{animationDelay: '2s'}}>
             <svg fill="currentColor" viewBox="0 0 24 24"><path d="M21 16.5C21 16.88 20.79 17.21 20.47 17.38L12.57 21.82C12.41 21.94 12.21 22 12 22S11.59 21.94 11.43 21.82L3.53 17.38C3.21 17.21 3 16.88 3 16.5V7.5C3 7.12 3.21 6.79 3.53 6.62L11.43 2.18C11.59 2.06 11.79 2 12 2S12.41 2.06 12.57 2.18L20.47 6.62C20.79 6.79 21 7.12 21 7.5V16.5Z"/></svg>
           </div>
         </div>
 
-        <div className="container mx-auto px-4 text-center relative z-10">
+        <div className="container mx-auto px-4 text-center relative z-30 w-full">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white via-cyan-100 to-blue-200 bg-clip-text text-transparent">
               Secure Your Digital Future with SBM Tech
