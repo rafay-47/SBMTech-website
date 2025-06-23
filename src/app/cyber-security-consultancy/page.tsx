@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
-import AccreditationTicker from "@/components/AccreditationTicker";
 import ConsultancyServiceCard from "@/components/ConsultancyServiceCard";
 import type { Metadata } from "next";
 
@@ -382,10 +380,10 @@ export default function CyberSecurityConsultancy() {
               <h2 className="text-4xl lg:text-5xl font-bold text-[#241940] mb-6">How it Works</h2>
               <div className="space-y-4 text-lg text-gray-600 mb-8 leading-relaxed">
                 <p>
-                  Many cyber security consultancy engagements focus on the implementation of industry control frameworks, international standards and specific programme requirements. Instead, we develop tailored approaches to help meet each of our client's unique requirements.
+                  Many cyber security consultancy engagements focus on the implementation of industry control frameworks, international standards and specific programme requirements. Instead, we develop tailored approaches to help meet each of our client&apos;s unique requirements.
                 </p>
                 <p>
-                  We work with every client to develop a tailored solution that ensures our client's business outcomes are considered at all stages of the engagement, and that our services recognise and support their business objectives. Across our consulting teams, we have extensive expertise in cloud, critical infrastructure, operational technology, cyber threat intelligence and incident response.
+                  We work with every client to develop a tailored solution that ensures our client&apos;s business outcomes are considered at all stages of the engagement, and that our services recognise and support their business objectives. Across our consulting teams, we have extensive expertise in cloud, critical infrastructure, operational technology, cyber threat intelligence and incident response.
                 </p>
               </div>
               <button className="bg-gradient-to-r from-[#241940] to-[#2d1b69] hover:from-[#2d1b69] hover:to-[#241940] text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-xl">

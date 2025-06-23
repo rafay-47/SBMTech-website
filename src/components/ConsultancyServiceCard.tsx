@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface ConsultancyServiceCardProps {
   title: string;
   description: string;
@@ -10,7 +8,6 @@ interface ConsultancyServiceCardProps {
 export default function ConsultancyServiceCard({ 
   title, 
   description, 
-  href, 
 }: ConsultancyServiceCardProps) {
   return (
     <div className="group relative">
