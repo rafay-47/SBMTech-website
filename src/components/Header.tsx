@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import ServicesDropdown from './ServicesDropdown';
 
 export default function Header() {
@@ -62,16 +63,14 @@ export default function Header() {
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
             <Link href="/" className="flex items-center group">
-              <div className="flex items-center space-x-3">
-                <div className="relative">
-                  <span className="text-3xl font-extrabold bg-gradient-to-r from-white via-cyan-200 to-blue-300 bg-clip-text text-transparent group-hover:from-cyan-300 group-hover:via-cyan-100 group-hover:to-white transition-all duration-300">
-                    SBM
-                  </span>
-                  <span className="text-3xl font-extrabold text-cyan-400 group-hover:text-white transition-colors duration-300 ml-2">
-                    Tech
-                  </span>
-                  <div className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-blue-500 group-hover:w-full transition-all duration-300"></div>
-                </div>
+              <div className="relative">
+                <Image 
+                  src="/images/image.ico" 
+                  alt="SBM Tech Logo" 
+                  width={120} 
+                  height={40}
+                  className="transition-all duration-300 group-hover:scale-105"
+                />
               </div>
             </Link>
 

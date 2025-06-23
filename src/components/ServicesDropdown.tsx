@@ -93,24 +93,24 @@ const serviceCategories: ServiceCategory[] = [
 const getColorClasses = (color: string) => {
   const colorMap = {
     blue: {
-      bg: 'from-slate-700 to-slate-600',
-      border: 'border-l-slate-600',
-      text: 'text-slate-700'
+      bg: 'from-[#241940] to-[#2d1b69]',
+      border: 'border-l-[#2d1b69]',
+      text: 'text-[#241940]'
     },
     green: {
-      bg: 'from-teal-700 to-teal-600',
-      border: 'border-l-teal-600',
-      text: 'text-teal-700'
+      bg: 'from-[#2d1b69] to-[#1e1537]',
+      border: 'border-l-[#1e1537]',
+      text: 'text-[#2d1b69]'
     },
     purple: {
-      bg: 'from-indigo-700 to-indigo-600',
-      border: 'border-l-indigo-600',
-      text: 'text-indigo-700'
+      bg: 'from-[#1e1537] to-[#241940]',
+      border: 'border-l-[#241940]',
+      text: 'text-[#1e1537]'
     },
     red: {
-      bg: 'from-rose-800 to-rose-700',
-      border: 'border-l-rose-700',
-      text: 'text-rose-800'
+      bg: 'from-[#241940] to-[#1e1537]',
+      border: 'border-l-[#1e1537]',
+      text: 'text-[#241940]'
     }
   };
   return colorMap[color as keyof typeof colorMap] || colorMap.blue;
@@ -131,13 +131,13 @@ export default function ServicesDropdown({ isOpen, onMouseEnter, onMouseLeave }:
 
   return (
     <div 
-      className="absolute top-full left-0 mt-2 w-[900px] bg-white rounded-xl shadow-2xl z-[9999] border border-gray-200"
+      className="absolute top-full left-0 transform -translate-x-1/2 mt-1 w-[800px] bg-gradient-to-br from-[#2d1b69] via-[#241940] to-[#1e1537] rounded-xl shadow-2xl z-[9999] border border-cyan-400/30"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
       <div className="flex">
         {/* Left Sidebar - Categories */}
-        <div className="w-80 bg-gray-50 rounded-l-xl p-6 border-r border-gray-200">
+        <div className="w-80 bg-gradient-to-br from-[#241940]/80 to-[#2d1b69]/80 rounded-l-xl p-6 border-r border-cyan-400/20">
           <div className="space-y-2">
             {serviceCategories.map((category) => {
               const colorClasses = getColorClasses(category.color);
@@ -147,7 +147,7 @@ export default function ServicesDropdown({ isOpen, onMouseEnter, onMouseLeave }:
                 <div
                   key={category.id}
                   className={`group cursor-pointer transition-all duration-200 ${
-                    isActive ? `bg-white shadow-sm border-l-4 ${colorClasses.border}` : 'hover:bg-white border-l-4 border-transparent hover:border-l-gray-300'
+                    isActive ? `bg-[#2d1b69]/60 shadow-sm border-l-4 ${colorClasses.border}` : 'hover:bg-[#2d1b69]/40 border-l-4 border-transparent hover:border-l-cyan-400/50'
                   } rounded-lg`}
                   onMouseEnter={() => setActiveCategory(category.id)}
                 >
@@ -158,12 +158,12 @@ export default function ServicesDropdown({ isOpen, onMouseEnter, onMouseLeave }:
                       </svg>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className={`font-semibold text-[#241940] transition-colors ${isActive ? colorClasses.text : 'group-hover:text-gray-700'}`}>
+                      <h3 className={`font-semibold text-white transition-colors ${isActive ? 'text-cyan-300' : 'group-hover:text-cyan-200'}`}>
                         {category.title}
                       </h3>
                     </div>
                     <svg 
-                      className={`w-4 h-4 text-gray-400 transition-colors ${isActive ? 'text-gray-600' : 'group-hover:text-gray-600'}`} 
+                      className={`w-4 h-4 text-gray-300 transition-colors ${isActive ? 'text-cyan-300' : 'group-hover:text-cyan-200'}`} 
                       fill="currentColor" 
                       viewBox="0 0 24 24"
                     >
@@ -184,41 +184,38 @@ export default function ServicesDropdown({ isOpen, onMouseEnter, onMouseLeave }:
               <div className="mb-6">
                 <Link 
                   href={`/${activeCategoryData.id}`} 
-                  className="inline-flex items-center text-xl font-bold text-[#241940] hover:text-blue-600 transition-colors mb-3 group"
+                  className="inline-flex items-center text-xl font-bold text-white hover:text-cyan-300 transition-colors mb-3 group"
                 >
                   <span>{activeCategoryData.title} Overview</span>
                   <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/>
                   </svg>
                 </Link>
-                <p className="text-gray-600 text-sm leading-relaxed">
+                <p className="text-gray-300 text-sm leading-relaxed">
                   {activeCategoryData.description}
                 </p>
               </div>
 
-              <hr className="mb-6 border-gray-200" />
+              <hr className="mb-6 border-cyan-400/20" />
 
               {/* Services Grid */}
               <div className="grid grid-cols-2 gap-x-8 gap-y-2">
                 {activeCategoryData.services.map((service, index) => (
                   <div key={index} className="group">
-                    <Link 
-                      href={service.href} 
-                      className="block py-2 px-3 rounded-lg hover:bg-gray-50 transition-colors"
-                    >
-                      <span className="text-sm text-gray-700 group-hover:text-[#241940] group-hover:font-medium transition-all">
+                    <div className="block py-2 px-3 rounded-lg hover:bg-[#2d1b69]/30 transition-colors">
+                      <span className="text-sm text-gray-300 group-hover:text-white group-hover:font-medium transition-all">
                         {service.title}
                       </span>
-                    </Link>
+                    </div>
                   </div>
                 ))}
               </div>
 
               {/* Footer Link */}
-              <div className="mt-8 pt-6 border-t border-gray-200">
+              <div className="mt-8 pt-6 border-t border-cyan-400/20">
                 <Link 
                   href="/services" 
-                  className="inline-flex items-center text-[#241940] hover:text-blue-600 font-medium transition-colors group"
+                  className="inline-flex items-center text-white hover:text-cyan-300 font-medium transition-colors group"
                 >
                   <span>Overview of all Services</span>
                   <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">
