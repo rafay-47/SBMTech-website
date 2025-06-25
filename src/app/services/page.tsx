@@ -117,7 +117,7 @@ export default function Services() {
               A Complete, <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Cutting-Edge</span> Menu of Security Services
             </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              SBM Tech's cyber security consultancy services combine a comprehensive set of methodologies and expertise across various technical areas, including the ability to implement positive cyber security change.
+              SBM Tech&apos;s cyber security consultancy services combine a comprehensive set of methodologies and expertise across various technical areas, including the ability to implement positive cyber security change.
             </p>
           </div>
 
@@ -137,13 +137,13 @@ export default function Services() {
             
             <ServiceCategoryCard
               title="Data Privacy"
-              description="Keep pace with evolving regulatory and compliance demands and build trust in the personal data being used by your organisation with SBM Tech's data privacy services."
+              description="Keep pace with evolving regulatory and compliance demands and build trust in the personal data being used by your organisation with SBM Tech&apos;s data privacy services."
               href="/data-privacy"
             />
             
             <ServiceCategoryCard
               title="Penetration Testing"
-              description="Assess the security of your organisation's network from an internal and external perspective by completing a penetration test with SBM Tech's highly certified and experienced offensive security experts."
+              description="Assess the security of your organisation&apos;s network from an internal and external perspective by completing a penetration test with SBM Tech&apos;s highly certified and experienced offensive security experts."
               href="/penetration-testing"
             />
           </div>
@@ -315,7 +315,7 @@ export default function Services() {
                 Ready to Get Started?
               </h2>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                Discover how our comprehensive security services can transform your organisation's security posture and support your business objectives.
+                Discover how our comprehensive security services can transform your organisation&apos;s security posture and support your business objectives.
               </p>
               <button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-xl">
                 Speak to our Team

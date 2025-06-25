@@ -6,7 +6,7 @@ import ProcessSection from "@/components/ProcessSection";
 
 export const metadata: Metadata = {
   title: "Data Privacy Services | SBM Tech",
-  description: "Keep pace with evolving regulatory and compliance demands and build trust in the personal data being used by your organisation with SBM Tech's data privacy services.",
+  description: "Keep pace with evolving regulatory and compliance demands and build trust in the personal data being used by your organisation with SBM Tech&apos;s data privacy services.",
   keywords: "data privacy services, GDPR compliance, ISO 27701, data protection officer, data privacy audit, GDPR gap analysis",
 };
 
@@ -52,7 +52,7 @@ export default function DataPrivacyServices() {
               Data Privacy Services
             </h1>
             <p className="text-xl mb-8 text-gray-300 leading-relaxed">
-              Keep pace with evolving regulatory and compliance demands and build trust in the personal data being used by your organisation with SBM Tech's data privacy services.
+              Keep pace with evolving regulatory and compliance demands and build trust in the personal data being used by your organisation with SBM Tech&apos;s data privacy services.
             </p>
             <div className="flex gap-6 justify-center flex-wrap">
               <Link href="/contact-us">
@@ -178,7 +178,7 @@ export default function DataPrivacyServices() {
             
             <DataPrivacyServiceCard
               title="Data Privacy Maturity Framework"
-              description="Assess and improve your organisation's data privacy maturity with our comprehensive framework approach."
+              description="Assess and improve your organisation&apos;s data privacy maturity with our comprehensive framework approach."
               href="/data-privacy-maturity-framework"
             />
             
@@ -288,7 +288,7 @@ export default function DataPrivacyServices() {
               },
               {
                 question: "An Extension of Your Team",
-                answer: "SBM Tech's Data Protection consultants embed themselves within internal teams so they can work alongside them in support of existing compliance and/ or legal functions. Our teams aim to understand your organisation's individual business goals, culture and operating context, so that your Data Protection function is focused on the most prevalent activities."
+                answer: "SBM Tech&apos;s Data Protection consultants embed themselves within internal teams so they can work alongside them in support of existing compliance and/ or legal functions. Our teams aim to understand your organisation&apos;s individual business goals, culture and operating context, so that your Data Protection function is focused on the most prevalent activities."
               },
               {
                 question: "Outcome-Focused and Tool-Agnostic",
@@ -387,7 +387,7 @@ export default function DataPrivacyServices() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#241940] mb-6 group-hover:text-cyan-700 transition-colors duration-300">Improved ROI</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  We'll review and consolidate your tools and technology so you can derive more value from your existing security investment.
+                  We&apos;ll review and consolidate your tools and technology so you can derive more value from your existing security investment.
                 </p>
               </div>
             </div>
@@ -452,7 +452,7 @@ export default function DataPrivacyServices() {
                   <strong>Our data privacy services all start with a gap assessment to identify potential vulnerabilities compliance shortfalls and develop a roadmap of improvements.</strong>
                 </p>
                 <p>
-                  This roadmap prioritises services or activities that will deliver the most significant improvements to your organisation's data privacy in the shortest time, while also addressing the mid-to-long term developments to ensure ongoing compliance.
+                  This roadmap prioritises services or activities that will deliver the most significant improvements to your organisation&apos;s data privacy in the shortest time, while also addressing the mid-to-long term developments to ensure ongoing compliance.
                 </p>
                 <p>
                   We will then work alongside your organisation to implement these improvements and provide any ongoing continuing support that is required.
@@ -498,7 +498,7 @@ export default function DataPrivacyServices() {
               },
               {
                 question: "What Are the Benefits of Data Privacy Consultancy?",
-                answer: "Data privacy consultancy can help organisations to develop and implement policies and procedures to protect the privacy of their customers' or employees' data. In addition, data privacy consultants can help create and maintain compliance with data privacy laws and regulations."
+                answer: "Data privacy consultancy can help organisations to develop and implement policies and procedures to protect the privacy of their customers&apos; or employees&apos; data. In addition, data privacy consultants can help create and maintain compliance with data privacy laws and regulations."
               },
               {
                 question: "How Important Is Data Privacy?",
@@ -510,7 +510,7 @@ export default function DataPrivacyServices() {
               },
               {
                 question: "Do We Need a Record of Processing Activities?",
-                answer: "Under GDPR, most organisations are required to maintain a Record of Processing Activities (RoPA). This document records details about how personal data is processed, including purposes, categories of data subjects, types of personal data, recipients, retention periods, and security measures. Small enterprises with fewer than 250 employees may be exempt unless their processing is likely to result in a risk to data subjects' rights and freedoms, involves special categories of data, or is not occasional."
+                answer: "Under GDPR, most organisations are required to maintain a Record of Processing Activities (RoPA). This document records details about how personal data is processed, including purposes, categories of data subjects, types of personal data, recipients, retention periods, and security measures. Small enterprises with fewer than 250 employees may be exempt unless their processing is likely to result in a risk to data subjects&apos; rights and freedoms, involves special categories of data, or is not occasional."
               }
             ].map((faq, index) => (
               <details key={index} className="group bg-white rounded-2xl border border-gray-200 hover:border-cyan-200 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
@@ -568,7 +568,7 @@ export default function DataPrivacyServices() {
                 Speak to our Data Privacy Experts
               </h2>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                Enhance your organisation's data protection practices and ensure compliance with evolving regulatory requirements through our comprehensive data privacy services.
+                Enhance your organisation&apos;s data protection practices and ensure compliance with evolving regulatory requirements through our comprehensive data privacy services.
               </p>
               <Link href="/contact-us">
                 <button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-xl">

@@ -51,7 +51,7 @@ export default function AboutUs() {
               About Us
             </h1>
             <p className="text-xl mb-8 text-gray-300 leading-relaxed">
-              SBM Tech is a leading cyber security services company specialising in protecting and transforming critical business functions for some of the world's most trusted organisations.
+              SBM Tech is a leading cyber security services company specialising in protecting and transforming critical business functions for some of the world&apos;s most trusted organisations.
             </p>
             <div className="flex gap-6 justify-center flex-wrap">
               <Link href="#why-choose" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
@@ -113,7 +113,7 @@ export default function AboutUs() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#241940] mb-6 group-hover:text-cyan-700 transition-colors duration-300">Serving Clients Globally</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Our headquarters is in the UK where we run a 24/7 Security Operations Centre (SOC) which has expanded into the US to further support global clients. Since being founded in 2013, SBM Tech has grown rapidly and is now one of the UK's largest independent cyber security services providers.
+                  Our headquarters is in the UK where we run a 24/7 Security Operations Centre (SOC) which has expanded into the US to further support global clients. Since being founded in 2013, SBM Tech has grown rapidly and is now one of the UK&apos;s largest independent cyber security services providers.
                 </p>
               </div>
             </div>
@@ -270,7 +270,7 @@ export default function AboutUs() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#241940] mb-6 group-hover:text-purple-700 transition-colors duration-300">One Team</h3>
                 <p className="text-gray-700 leading-relaxed font-semibold">
-                  Always energetic, empathetic and an<br />extension of our clients' teams.
+                  Always energetic, empathetic and an<br />extension of our clients&apos; teams.
                 </p>
               </div>
             </div>

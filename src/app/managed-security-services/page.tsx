@@ -166,7 +166,7 @@ export default function ManagedSecurityServices() {
               </div>
               <div className="text-lg text-gray-600 space-y-6 leading-relaxed">
                 <p className="text-xl text-gray-700">
-                  Our managed security services are trusted by the world's leading Critical National Infrastructure (CNI) organisations to defend them against threats. Delivered from our 24/7 Security Operations Centre (SOC), our services help them enhance their defensive capabilities and stay ahead of the latest threats.
+                  Our managed security services are trusted by the world&apos;s leading Critical National Infrastructure (CNI) organisations to defend them against threats. Delivered from our 24/7 Security Operations Centre (SOC), our services help them enhance their defensive capabilities and stay ahead of the latest threats.
                 </p>
                 <div className="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-2xl p-6">
                   <h4 className="text-xl font-semibold text-[#241940] mb-3">What is an MSS Provider?</h4>
@@ -209,19 +209,19 @@ export default function ManagedSecurityServices() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mb-16">
             <ManagedServiceCard
               title="Managed Detection & Response"
-              description="Secure your organisation's cloud environments and safeguard users, devices, and data."
+              description="Secure your organisation&apos;s cloud environments and safeguard users, devices, and data."
               href="/managed-detection-response"
             />
             
             <ManagedServiceCard
               title="Vulnerability Management Services"
-              description="Gain a thorough, comprehensive understanding of your organisation's overall security posture, with detailed predictions of where an attack is most likely to take place."
+              description="Gain a thorough, comprehensive understanding of your organisation&apos;s overall security posture, with detailed predictions of where an attack is most likely to take place."
               href="/vulnerability-management-services"
             />
             
             <ManagedServiceCard
               title="Security Operations Centre"
-              description="Scale your organisation's security operations with the threat detection, cyber intelligence, and incident response capabilities of a hybrid or fully managed SOC."
+              description="Scale your organisation&apos;s security operations with the threat detection, cyber intelligence, and incident response capabilities of a hybrid or fully managed SOC."
               href="/security-operations-centre"
             />
             
@@ -233,7 +233,7 @@ export default function ManagedSecurityServices() {
             
             <ManagedServiceCard
               title="Cybiquity Defend"
-              description="SBM Tech's unified, threat-informed defence platform. Gain better threat visibility and increase defence capabilities within your managed security service."
+              description="SBM Tech&apos;s unified, threat-informed defence platform. Gain better threat visibility and increase defence capabilities within your managed security service."
               href="/cybiquity-defend"
             />
             
@@ -343,7 +343,7 @@ export default function ManagedSecurityServices() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#241940] mb-6 group-hover:text-cyan-700 transition-colors duration-300">Improved ROI</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  We'll review and consolidate your tools and technology so you can derive more value from your existing security investment.
+                  We&apos;ll review and consolidate your tools and technology so you can derive more value from your existing security investment.
                 </p>
               </div>
             </div>
@@ -385,7 +385,7 @@ export default function ManagedSecurityServices() {
                 answer: "Managed security services (MSS) provide you with a comprehensive solution to address your cybersecurity threats. As an expert MSSP, we understand the complexities and challenges that businesses face in managing their own security operations. That's why we offer tailored services to help you navigate the ever-evolving landscape of cyber threats. With our managed security services, you can rest assured knowing that your network security is constantly monitored for any potential vulnerabilities or attacks."
               },
               {
-                question: "Why Use SBM Tech's Managed Security Service?",
+                question: "Why Use SBM Tech&apos;s Managed Security Service?",
                 answer: "Outsourcing not only saves you valuable time but also adds an extra layer of protection for your organisation. By leveraging our service, you can focus on what matters most – growing your business – while leaving the intricate task of protecting your information assets in capable hands, including firewall management and data loss prevention."
               },
               {
@@ -464,7 +464,7 @@ export default function ManagedSecurityServices() {
                 Speak to our Managed Security Team
               </h2>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                Enhance your organisation's security posture with 24/7 monitoring, threat detection, and incident response capabilities from our expert SOC team.
+                Enhance your organisation&apos;s security posture with 24/7 monitoring, threat detection, and incident response capabilities from our expert SOC team.
               </p>
               <Link href="/contact-us">
                 <button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-xl">

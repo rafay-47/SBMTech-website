@@ -52,7 +52,7 @@ export default function PenetrationTestingServices() {
               Penetration Testing Services
             </h1>
             <p className="text-xl mb-8 text-gray-300 leading-relaxed">
-              Assess the security of your organisation's network from an internal and external perspective by completing a penetration test with SBM Tech's highly certified and experienced offensive security experts.
+              Assess the security of your organisation&apos;s network from an internal and external perspective by completing a penetration test with SBM Tech&apos;s highly certified and experienced offensive security experts.
             </p>
             <div className="flex gap-6 justify-center flex-wrap">
               <Link href="/contact-us">
@@ -275,7 +275,7 @@ export default function PenetrationTestingServices() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#241940] mb-6 group-hover:text-cyan-700 transition-colors duration-300">A Modular, Tailored Approach</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  SBM Tech doesn't have a one-size-fits-all approach to testing, and will customise the engagement dependent on your specific objectives (e.g. active directory assessment, password reviews, firewall reviews, device reviews).
+                  SBM Tech doesn&apos;t have a one-size-fits-all approach to testing, and will customise the engagement dependent on your specific objectives (e.g. active directory assessment, password reviews, firewall reviews, device reviews).
                 </p>
               </div>
             </div>
@@ -321,7 +321,7 @@ export default function PenetrationTestingServices() {
               </h2>
               <div className="space-y-6 text-lg">
                 <p className="text-xl text-gray-700">
-                  Organisations that don't regularly perform penetration testing often face challenges in protecting sensitive data and systems, maintaining compliance and customer trust, and reducing the risk of a successful cyber attack.
+                  Organisations that don&apos;t regularly perform penetration testing often face challenges in protecting sensitive data and systems, maintaining compliance and customer trust, and reducing the risk of a successful cyber attack.
                 </p>
                 <p className="text-gray-600">
                   Penetration testing – or pen testing – helps organisations identify vulnerabilities that could be exploited by an attacker to access sensitive data, such as customer information or financial records. These vulnerabilities can also result in financial losses for an organisation, either through direct financial theft or through the costs of responding to and recovering from a successful cyber attack.
@@ -363,16 +363,16 @@ export default function PenetrationTestingServices() {
               <h2 className="text-4xl lg:text-5xl font-bold text-[#241940] mb-6">How it Works</h2>
               <div className="space-y-4 text-lg text-gray-600 mb-8 leading-relaxed">
                 <p>
-                  SBM Tech's approach to penetration testing incorporates advanced remote testing solutions.
+                  SBM Tech&apos;s approach to penetration testing incorporates advanced remote testing solutions.
                 </p>
                 <p>
-                  As a result, there's no need for SBM Tech personnel to be on-site unless specifically requested or desired by the customer, which can reduce potential overheads for the client as there is no requirement for dedicated space and support for on-site personnel.
+                  As a result, there&apos;s no need for SBM Tech personnel to be on-site unless specifically requested or desired by the customer, which can reduce potential overheads for the client as there is no requirement for dedicated space and support for on-site personnel.
                 </p>
                 <p>
                   Our penetration testing team consists of ex-sysadmins, developers, network engineers and system architects who bring years of experience developing and securing environments.
                 </p>
                 <p>
-                  This ensures our assessment considers all aspects of your organisation's infrastructure, incorporates lesser-known attacks and vulnerabilities, and considers business-impact of a potential breach.
+                  This ensures our assessment considers all aspects of your organisation&apos;s infrastructure, incorporates lesser-known attacks and vulnerabilities, and considers business-impact of a potential breach.
                 </p>
               </div>
             </div>

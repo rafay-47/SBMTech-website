@@ -4,7 +4,7 @@ interface DataPrivacyServiceCardProps {
   href: string;
 }
 
-export default function DataPrivacyServiceCard({ title, description, href }: DataPrivacyServiceCardProps) {
+export default function DataPrivacyServiceCard({ title, description }: DataPrivacyServiceCardProps) {
   return (
     <div className="h-full bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 p-8 border border-gray-100 hover:border-cyan-200">
       <div className="flex flex-col h-full">

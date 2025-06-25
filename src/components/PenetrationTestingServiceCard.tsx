@@ -4,7 +4,7 @@ interface PenetrationTestingServiceCardProps {
   href: string;
 }
 
-export default function PenetrationTestingServiceCard({ title, description, href }: PenetrationTestingServiceCardProps) {
+export default function PenetrationTestingServiceCard({ title, description }: PenetrationTestingServiceCardProps) {
   return (
     <div className="group relative h-full">
       <div className="h-full bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 p-8 border border-gray-100 hover:border-cyan-200">
