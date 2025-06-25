@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 interface ManagedServiceCardProps {
   title: string;
   description: string;

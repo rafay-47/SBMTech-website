@@ -5,7 +5,7 @@ import BoardMemberCard from "@/components/BoardMemberCard";
 
 export const metadata: Metadata = {
   title: "About Us | SBM Tech",
-  description: "SBM Tech is a leading cyber security services company specialising in protecting and transforming critical business functions for some of the world's most trusted organisations.",
+  description: "SBM Tech is a leading cyber security services company specialising in protecting and transforming critical business functions for some of the world&apos;s most trusted organisations.",
   keywords: "about SBM Tech, cyber security company, security experts, mission, vision, values, team, leadership",
 };
 
@@ -312,7 +312,7 @@ export default function AboutUs() {
               Board <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Members</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Meet the experienced leadership team driving SBM Tech's mission to protect and transform critical business functions.
+              Meet the experienced leadership team driving SBM Tech&apos;s mission to protect and transform critical business functions.
             </p>
           </div>
 
@@ -322,7 +322,7 @@ export default function AboutUs() {
               name="Anthony Young"
               title="Chief Executive Officer"
               image="/images/business-image.jpg"
-              bio="Anthony is Chief Executive Officer at SBM Tech and founded the company in 2013 with the aim of building a world-class cyber security company focused on high quality delivery of complex cyber programmes whilst building long-term client relationships. Anthony has a passion for business improvement combined with a strong business development background and large network of contacts built up from over 20 years working in the cyber security industry. Anthony's responsibilities within SBM Tech cover business growth and development, marketing, finance, and operations."
+              bio="Anthony is Chief Executive Officer at SBM Tech and founded the company in 2013 with the aim of building a world-class cyber security company focused on high quality delivery of complex cyber programmes whilst building long-term client relationships. Anthony has a passion for business improvement combined with a strong business development background and large network of contacts built up from over 20 years working in the cyber security industry. Anthony&apos;s responsibilities within SBM Tech cover business growth and development, marketing, finance, and operations."
               isFullWidth={true}
             />
           </div>
@@ -333,14 +333,14 @@ export default function AboutUs() {
               name="Martin Riley"
               title="Chief Technology Officer"
               image="/images/team-image.jpg"
-              bio="Martin joined SBM Tech in 2021 and is responsible for leading the continued growth and development of SBM Tech's managed security portfolio, comprising of cyber threat intelligence, security operations (including our managed detection and response service), and incident response capabilities. Martin has 20 years' experience and a passion for inspiring, developing and delivering leading, client focused operational solutions across security, cloud, and network. Prior to joining SBM Tech, he held other C-Suite roles where he was responsible for the strategic direction and service development within several service providers."
+              bio="Martin joined SBM Tech in 2021 and is responsible for leading the continued growth and development of SBM Tech&apos;s managed security portfolio, comprising of cyber threat intelligence, security operations (including our managed detection and response service), and incident response capabilities. Martin has 20 years&apos; experience and a passion for inspiring, developing and delivering leading, client focused operational solutions across security, cloud, and network. Prior to joining SBM Tech, he held other C-Suite roles where he was responsible for the strategic direction and service development within several service providers."
             />
 
             <BoardMemberCard
               name="Ben Vaughan"
               title="Chief Commercial Officer"
               image="/images/businessImage.png"
-              bio="Ben is the Chief Commercial Officer (CCO) at SBM Tech and is responsible for driving business growth by leading our Sales, Marketing and Bid teams. Ben joined SBM Tech in 2024 and brings a wealth of international experience from working with clients in CNI, defence, aerospace and enterprise across the UK, USA and Western Europe over the past 14 years. Prior to SBM Tech, Ben was the Global Marketing Director at AIRBUS Cyber Security and the Managing Director of Thales' Cyber Defence Solutions business for North America. Ben brings an in-depth knowledge of key markets, with a focus on helping customers solve complex security challenges in the IT and Operational Technology (OT) space."
+              bio="Ben is the Chief Commercial Officer (CCO) at SBM Tech and is responsible for driving business growth by leading our Sales, Marketing and Bid teams. Ben joined SBM Tech in 2024 and brings a wealth of international experience from working with clients in CNI, defence, aerospace and enterprise across the UK, USA and Western Europe over the past 14 years. Prior to SBM Tech, Ben was the Global Marketing Director at AIRBUS Cyber Security and the Managing Director of Thales&apos; Cyber Defence Solutions business for North America. Ben brings an in-depth knowledge of key markets, with a focus on helping customers solve complex security challenges in the IT and Operational Technology (OT) space."
             />
 
             <BoardMemberCard
@@ -354,7 +354,7 @@ export default function AboutUs() {
               name="Sam Thornton"
               title="Chief Operating Officer"
               image="/images/team-image.jpg"
-              bio="Sam is SBM Tech's Chief Operating Officer (COO) and is responsible for enhancing its global reputation for security services while also strengthening client relationships, ensuring exceptional support, and contributing to the board's strategic direction. Sam brings 20 years of experience in cyber security, including 12 years in consulting, and has a strong track record in managing large-scale, complex strategic engagements. Having held roles such as Head of Security, Lead Information Risk Manager, and Account Security Manager, Sam also brings expertise across stakeholder management, information assurance, and risk advisory."
+              bio="Sam is SBM Tech&apos;s Chief Operating Officer (COO) and is responsible for enhancing its global reputation for security services while also strengthening client relationships, ensuring exceptional support, and contributing to the board&apos;s strategic direction. Sam brings 20 years of experience in cyber security, including 12 years in consulting, and has a strong track record in managing large-scale, complex strategic engagements. Having held roles such as Head of Security, Lead Information Risk Manager, and Account Security Manager, Sam also brings expertise across stakeholder management, information assurance, and risk advisory."
             />
           </div>
         </div>

@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import ProcessSection from "@/components/ProcessSection";
 
 export const metadata: Metadata = {
   title: "Services | SBM Tech",
