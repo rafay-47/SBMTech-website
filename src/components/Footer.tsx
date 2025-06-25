@@ -12,7 +12,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-6 text-cyan-400">Services</h3>
             <ul className="space-y-3">
               <li><Link href="/cyber-security-consultancy" className="text-gray-300 hover:text-white transition-colors">Cybersecurity Consultancy</Link></li>
-              <li><Link href="/managed-security" className="text-gray-300 hover:text-white transition-colors">Managed Security</Link></li>
+              <li><Link href="/managed-security-services" className="text-gray-300 hover:text-white transition-colors">Managed Security</Link></li>
               <li><Link href="/data-privacy" className="text-gray-300 hover:text-white transition-colors">Data Privacy</Link></li>
               <li><Link href="/penetration-testing" className="text-gray-300 hover:text-white transition-colors">Penetration Testing</Link></li>
             </ul>
@@ -23,7 +23,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-6 text-cyan-400">About Us</h3>
             <ul className="space-y-3">
               <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors">Services</Link></li>
-              <li><Link href="/why-sbmtech" className="text-gray-300 hover:text-white transition-colors">Why SBM Tech</Link></li>
+              <li><Link href="/about-us" className="text-gray-300 hover:text-white transition-colors">Why SBM Tech</Link></li>
             </ul>
           </div>
 
@@ -65,7 +65,7 @@ export default function Footer() {
             {/* Left Side - Logo */}
             <div className="flex items-center space-x-4">
               <Image 
-                src="/images/image.ico" 
+                src="/images/company-logo.ico" 
                 alt="SBM Tech Logo" 
                 width={100} 
                 height={35}

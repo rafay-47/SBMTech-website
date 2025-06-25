@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ServiceCard from "@/components/ServiceCard";
 
 export default function Home() {
@@ -7,7 +8,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative text-white py-24 overflow-hidden min-h-screen flex items-center">
         {/* Video Background */}
-        <div className="absolute inset-0 z-0">
+        <div className="absolute top-0 left-0 w-full h-full z-0">
           <video 
             autoPlay 
             muted 
@@ -46,12 +47,17 @@ export default function Home() {
               managed services, and expert guidance to protect your business from evolving threats.
             </p>
             <div className="flex gap-6 justify-center flex-wrap">
-              <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
-                Get Security Assessment
-              </button>
-              <button className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-[#241940] px-8 py-4 rounded-full font-semibold transition-all">
-                Explore Services
-              </button>
+              <Link href="/contact-us">
+                <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
+                  Get Security Assessment
+                </button>
+              </Link>
+              <Link href="/services">
+                <button className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-[#241940] px-8 py-4 rounded-full font-semibold transition-all">
+                  Explore Services
+                </button>
+              </Link>
+              
             </div>
           </div>
         </div>
@@ -94,7 +100,7 @@ export default function Home() {
                 { title: "Security Operations Centre", href: "/security-operations-centre" },
                 { title: "Digital Forensics & Incident Response", href: "/digital-forensics-and-incident-response" }
               ]}
-              viewMoreHref="/managed-security"
+              viewMoreHref="/managed-security-services"
             />
           </div>
 
@@ -156,9 +162,11 @@ export default function Home() {
                 effectiveness of the Microsoft security portfolio, and drive maximum return from your 
                 investment.
               </p>
-              <button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-xl">
-                More About Us
-              </button>
+              <Link href="/about-us">
+                <button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-xl">
+                  More About Us
+                </button>
+              </Link>
             </div>
 
             {/* Right Content - Professional Image */}
@@ -207,9 +215,11 @@ export default function Home() {
                 Embark on a journey to increase your cyber resilience, improve your cybersecurity posture, and 
                 reduce your cyber security risk with our comprehensive Security Advisory services.
               </p>
-              <button className="bg-gradient-to-r from-[#241940] to-[#2d1b69] hover:from-[#2d1b69] hover:to-[#241940] text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-xl">
-                Speak to us
-              </button>
+              <Link href="/contact-us">
+                <button className="bg-gradient-to-r from-[#241940] to-[#2d1b69] hover:from-[#2d1b69] hover:to-[#241940] text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-xl">
+                  Speak to us
+                </button>
+              </Link>
             </div>
           </div>
         </div>
