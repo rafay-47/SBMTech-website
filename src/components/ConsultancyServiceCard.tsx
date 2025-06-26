@@ -11,7 +11,7 @@ export default function ConsultancyServiceCard({
 }: ConsultancyServiceCardProps) {
   return (
     <div className="group relative">
-      <div className="h-full bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100 overflow-hidden">
+      <div className="h-full bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100 overflow-hidden hover-lift">
         {/* Gradient accent line */}
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-cyan-500 to-blue-600"></div>
         
@@ -29,7 +29,7 @@ export default function ConsultancyServiceCard({
           </h3>
           
           {/* Description */}
-          <p className="text-gray-600 leading-relaxed line-clamp-4">
+          <p className="text-gray-enhanced leading-relaxed line-clamp-4">
             {description}
           </p>
           

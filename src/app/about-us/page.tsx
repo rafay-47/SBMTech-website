@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
-import BoardMemberCard from "@/components/BoardMemberCard";
 
 export const metadata: Metadata = {
   title: "About Us | SBM Tech",
@@ -17,7 +16,7 @@ export default function AboutUs() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/cyber-security-consultancy-banner.jpg"
+            src="/images/about-us-banner.jpg"
             alt="About SBM Tech Background"
             fill
             className="object-cover"
@@ -57,20 +56,31 @@ export default function AboutUs() {
               <Link href="#why-choose" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 shadow-xl">
                 Why Choose SBM Tech
               </Link>
-              <Link href="#accreditations" className="border-2 border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-[#241940] px-8 py-4 rounded-full font-semibold transition-all">
-                Our Accreditations & Certifications
-              </Link>
             </div>
           </div>
         </div>
       </section>
 
       {/* Building a Secure Future Together Section */}
-      <section id="why-choose" className="py-24 bg-white relative overflow-hidden">
-        {/* Background Elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-20 right-20 w-32 h-32 bg-gradient-to-br from-cyan-100/20 to-blue-100/20 rounded-full blur-2xl"></div>
-          <div className="absolute bottom-20 left-20 w-40 h-40 bg-gradient-to-br from-purple-100/20 to-indigo-100/20 rounded-full blur-3xl"></div>
+      <section id="why-choose" className="py-24 bg-subtle-blue relative overflow-hidden">
+        {/* Enhanced Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-16 right-16 w-32 h-32 bg-gradient-to-br from-cyan-100/25 to-blue-100/25 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 left-20 w-24 h-24 bg-gradient-to-br from-purple-100/20 to-indigo-100/20 rounded-full blur-2xl"></div>
+          <div className="absolute top-1/3 left-1/5 w-16 h-16 bg-gradient-to-br from-teal-100/30 to-green-100/30 rounded-full blur-xl animate-pulse" style={{animationDelay: '2s'}}></div>
+          
+          {/* Floating geometric elements */}
+          <div className="absolute top-40 left-1/3 w-3 h-3 bg-cyan-300/40 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
+          <div className="absolute bottom-60 right-1/4 w-4 h-4 border border-blue-300/30 rotate-45 animate-spin" style={{animationDuration: '15s'}}></div>
+          <div className="absolute top-3/4 left-1/6 w-2 h-2 bg-purple-300/35 rounded-full animate-pulse" style={{animationDelay: '2.5s'}}></div>
+          
+          {/* Security icons */}
+          <div className="absolute top-24 right-1/3 w-5 h-5 text-cyan-300/30 animate-pulse" style={{animationDelay: '1.5s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1Z"/></svg>
+          </div>
+          <div className="absolute bottom-40 left-1/4 w-4 h-4 text-blue-300/25 animate-bounce" style={{animationDelay: '3s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M21 16.5C21 16.88 20.79 17.21 20.47 17.38L12.57 21.82C12.41 21.94 12.21 22 12 22S11.59 21.94 11.43 21.82L3.53 17.38C3.21 17.21 3 16.88 3 16.5V7.5C3 7.12 3.21 6.79 3.53 6.62L11.43 2.18C11.59 2.06 11.79 2 12 2S12.41 2.06 12.57 2.18L20.47 6.62C20.79 6.79 21 7.12 21 7.5V16.5Z"/></svg>
+          </div>
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
@@ -84,12 +94,12 @@ export default function AboutUs() {
             <h2 className="text-5xl lg:text-6xl font-bold text-[#241940] leading-tight">
               Building a Secure <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Future Together</span>
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-enhanced max-w-3xl mx-auto leading-relaxed">
               Our team of security experts work with clients to deliver end-to-end services that solve key business challenges.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 mb-16">
             <div className="group relative">
               <div className="h-full bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 p-8 text-center border border-gray-100">
                 <div className="w-20 h-20 bg-gradient-to-br from-[#241940] to-[#2d1b69] rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
@@ -113,24 +123,11 @@ export default function AboutUs() {
                 </div>
                 <h3 className="text-2xl font-bold text-[#241940] mb-6 group-hover:text-cyan-700 transition-colors duration-300">Serving Clients Globally</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Our headquarters is in the UK where we run a 24/7 Security Operations Centre (SOC) which has expanded into the US to further support global clients. Since being founded in 2013, SBM Tech has grown rapidly and is now one of the UK&apos;s largest independent cyber security services providers.
+                  Our headquarters is in the US where we run a 24/7 Security Operations Centre (SOC) and provide support to global clients. Since being founded, we have grown rapidly and are now one of the largest independent cyber security services providers.
                 </p>
               </div>
             </div>
 
-            <div className="group relative" id="accreditations">
-              <div className="h-full bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-4 p-8 text-center border border-gray-100">
-                <div className="w-20 h-20 bg-gradient-to-br from-[#1e1537] to-[#241940] rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.5 16,12.1 16,12.7V16.2C16,16.8 15.4,17.3 14.8,17.3H9.2C8.6,17.3 8,16.8 8,16.2V12.7C8,12.1 8.6,11.5 9.2,11.5V10C9.2,8.6 10.6,7 12,7Z"/>
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold text-[#241940] mb-6 group-hover:text-cyan-700 transition-colors duration-300">ISO Certifications</h3>
-                <p className="text-gray-600 leading-relaxed">
-                  We are certified in the following ISO certifications: ISO 27001 (Information Security), ISO 27701 (Privacy), ISO 9001 (Quality), and operate to ISO 22301 (Business Continuity) standards.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -288,74 +285,6 @@ export default function AboutUs() {
                 </p>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Board Members Section */}
-      <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
-        {/* Background Elements */}
-        <div className="absolute top-0 left-0 w-full h-full">
-          <div className="absolute top-20 right-20 w-40 h-40 bg-gradient-to-br from-cyan-100/20 to-blue-100/20 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 left-20 w-32 h-32 bg-gradient-to-br from-purple-100/20 to-indigo-100/20 rounded-full blur-2xl"></div>
-        </div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="text-center mb-16 space-y-6">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-full text-sm font-semibold text-cyan-700 mb-4">
-              <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-              </svg>
-              Leadership Team
-            </div>
-            <h2 className="text-5xl lg:text-6xl font-bold text-[#241940] leading-tight">
-              Board <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Members</span>
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Meet the experienced leadership team driving SBM Tech&apos;s mission to protect and transform critical business functions.
-            </p>
-          </div>
-
-          {/* CEO - Full Width */}
-          <div className="mb-16">
-            <BoardMemberCard
-              name="Anthony Young"
-              title="Chief Executive Officer"
-              image="/images/business-image.jpg"
-              bio="Anthony is Chief Executive Officer at SBM Tech and founded the company in 2013 with the aim of building a world-class cyber security company focused on high quality delivery of complex cyber programmes whilst building long-term client relationships. Anthony has a passion for business improvement combined with a strong business development background and large network of contacts built up from over 20 years working in the cyber security industry. Anthony&apos;s responsibilities within SBM Tech cover business growth and development, marketing, finance, and operations."
-              isFullWidth={true}
-            />
-          </div>
-
-          {/* Other Board Members - Grid */}
-          <div className="grid md:grid-cols-2 gap-8">
-            <BoardMemberCard
-              name="Martin Riley"
-              title="Chief Technology Officer"
-              image="/images/team-image.jpg"
-              bio="Martin joined SBM Tech in 2021 and is responsible for leading the continued growth and development of SBM Tech&apos;s managed security portfolio, comprising of cyber threat intelligence, security operations (including our managed detection and response service), and incident response capabilities. Martin has 20 years&apos; experience and a passion for inspiring, developing and delivering leading, client focused operational solutions across security, cloud, and network. Prior to joining SBM Tech, he held other C-Suite roles where he was responsible for the strategic direction and service development within several service providers."
-            />
-
-            <BoardMemberCard
-              name="Ben Vaughan"
-              title="Chief Commercial Officer"
-              image="/images/businessImage.png"
-              bio="Ben is the Chief Commercial Officer (CCO) at SBM Tech and is responsible for driving business growth by leading our Sales, Marketing and Bid teams. Ben joined SBM Tech in 2024 and brings a wealth of international experience from working with clients in CNI, defence, aerospace and enterprise across the UK, USA and Western Europe over the past 14 years. Prior to SBM Tech, Ben was the Global Marketing Director at AIRBUS Cyber Security and the Managing Director of Thales&apos; Cyber Defence Solutions business for North America. Ben brings an in-depth knowledge of key markets, with a focus on helping customers solve complex security challenges in the IT and Operational Technology (OT) space."
-            />
-
-            <BoardMemberCard
-              name="Ruth Billen"
-              title="Chief Financial Officer"
-              image="/images/business-image.jpg"
-              bio="Ruth is an experienced finance professional who has worked within privately owned and private equity backed businesses to support growth and develop the finance functions. After training with PwC in Bristol, Ruth has worked in a range of industries including managed services, across the IT and healthcare sectors. Ruth has a focus on system development and automation to ensure that the finance function supports the rapidly growing business through the efficient provision of financial information, commercial support and financial control."
-            />
-
-            <BoardMemberCard
-              name="Sam Thornton"
-              title="Chief Operating Officer"
-              image="/images/team-image.jpg"
-              bio="Sam is SBM Tech&apos;s Chief Operating Officer (COO) and is responsible for enhancing its global reputation for security services while also strengthening client relationships, ensuring exceptional support, and contributing to the board&apos;s strategic direction. Sam brings 20 years of experience in cyber security, including 12 years in consulting, and has a strong track record in managing large-scale, complex strategic engagements. Having held roles such as Head of Security, Lead Information Risk Manager, and Account Security Manager, Sam also brings expertise across stakeholder management, information assurance, and risk advisory."
-            />
           </div>
         </div>
       </section>

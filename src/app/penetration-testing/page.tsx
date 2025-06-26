@@ -18,7 +18,7 @@ export default function PenetrationTestingServices() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/cyber-security-consultancy-banner.jpg"
+            src="/images/penetration-testing-banner.webp"
             alt="Penetration Testing Services Background"
             fill
             className="object-cover"
@@ -71,10 +71,34 @@ export default function PenetrationTestingServices() {
       </section>
 
       {/* Testing and Securing Your Most Critical Assets Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
-        {/* Subtle Background Elements */}
-        <div className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-cyan-100/30 to-purple-100/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-10 w-24 h-24 bg-gradient-to-br from-blue-100/40 to-indigo-100/40 rounded-full blur-2xl"></div>
+      <section className="py-24 bg-subtle-cyan relative overflow-hidden">
+        {/* Enhanced Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-20 right-20 w-32 h-32 bg-gradient-to-br from-cyan-100/25 to-blue-100/25 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 left-20 w-24 h-24 bg-gradient-to-br from-purple-100/20 to-indigo-100/20 rounded-full blur-2xl"></div>
+          <div className="absolute top-1/3 right-1/4 w-20 h-20 bg-gradient-to-br from-teal-100/30 to-green-100/30 rounded-full blur-xl animate-pulse" style={{animationDelay: '1.5s'}}></div>
+          
+          {/* Penetration testing themed floating elements */}
+          <div className="absolute top-32 left-1/4 w-6 h-6 text-cyan-300/40 animate-bounce" style={{animationDelay: '1s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1Z"/></svg>
+          </div>
+          <div className="absolute bottom-32 right-1/3 w-5 h-5 text-blue-300/35 animate-pulse" style={{animationDelay: '2s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M23.12 9.91L20.15 7.82L21.23 4.54L17.96 5.6L15.86 2.63L12.97 4.86L10.07 2.63L7.97 5.6L4.7 4.54L5.78 7.82L2.81 9.91L5.04 12.8L2.81 15.69L5.78 17.78L4.7 21.06L7.97 20L10.07 22.97L12.97 20.74L15.86 22.97L17.96 20L21.23 21.06L20.15 17.78L23.12 15.69L20.89 12.8L23.12 9.91Z"/></svg>
+          </div>
+          <div className="absolute top-2/3 left-1/6 w-4 h-4 text-purple-300/30 animate-bounce" style={{animationDelay: '2.5s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M21 16.5C21 16.88 20.79 17.21 20.47 17.38L12.57 21.82C12.41 21.94 12.21 22 12 22S11.59 21.94 11.43 21.82L3.53 17.38C3.21 17.21 3 16.88 3 16.5V7.5C3 7.12 3.21 6.79 3.53 6.62L11.43 2.18C11.59 2.06 11.79 2 12 2S12.41 2.06 12.57 2.18L20.47 6.62C20.79 6.79 21 7.12 21 7.5V16.5Z"/></svg>
+          </div>
+          
+          {/* Abstract geometric shapes for visual texture */}
+          <div className="absolute top-40 right-1/6 w-3 h-3 bg-cyan-300/50 rounded-full animate-pulse" style={{animationDelay: '1.8s'}}></div>
+          <div className="absolute bottom-48 left-1/3 w-5 h-5 border border-blue-300/40 rotate-45 animate-spin" style={{animationDuration: '16s'}}></div>
+          <div className="absolute top-1/4 right-1/5 w-2 h-2 bg-purple-300/45 rounded-full animate-bounce" style={{animationDelay: '2.2s'}}></div>
+          <div className="absolute bottom-60 left-1/5 w-4 h-4 border border-cyan-300/35 rounded-full animate-pulse" style={{animationDelay: '3s'}}></div>
+          
+          {/* Additional floating elements for depth */}
+          <div className="absolute top-56 right-2/3 w-1.5 h-1.5 bg-blue-300/40 rounded-full animate-pulse" style={{animationDelay: '2.8s'}}></div>
+          <div className="absolute bottom-72 right-1/4 w-2.5 h-2.5 bg-indigo-300/30 rounded-full animate-bounce" style={{animationDelay: '1.2s'}}></div>
+        </div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -102,10 +126,10 @@ export default function PenetrationTestingServices() {
             <div className="relative">
               <div className="relative group">
                 <Image 
-                  src="/images/business-image.jpg" 
+                  src="/images/penetration-testing-team.jpg" 
                   alt="Penetration Testing Team" 
-                  width={600}
-                  height={400}
+                  width={800}
+                  height={600}
                   className="rounded-3xl shadow-2xl group-hover:shadow-3xl transition-shadow duration-500" 
                 />
                 {/* Enhanced Decorative Elements */}
@@ -336,7 +360,7 @@ export default function PenetrationTestingServices() {
               <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8">
                 <div className="relative h-80 bg-gradient-to-br from-[#241940] to-[#2d1b69] rounded-xl overflow-hidden">
                   <Image 
-                    src="/images/team-image.jpg" 
+                    src="/images/key-challenges.jpg" 
                     alt="Penetration Testing Challenges" 
                     fill
                     className="object-cover" 
@@ -351,7 +375,7 @@ export default function PenetrationTestingServices() {
               <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8">
                 <div className="relative h-80 bg-gradient-to-br from-[#241940] to-[#2d1b69] rounded-xl overflow-hidden">
                   <Image 
-                    src="/images/business-image.jpg" 
+                    src="/images/securing.avif" 
                     alt="How Penetration Testing Works" 
                     fill
                     className="object-cover" 

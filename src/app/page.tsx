@@ -6,22 +6,24 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative text-white py-24 overflow-hidden min-h-screen flex items-center">
-        {/* Video Background */}
-        <div className="absolute top-0 left-0 w-full h-full z-0">
+      <section className="relative text-white py-24 overflow-hidden min-h-screen flex items-center bg-pattern-dots">
+        {/* Background Video */}
+        <div className="absolute inset-0 z-0">
           <video 
             autoPlay 
             muted 
             loop 
             playsInline
             className="w-full h-full object-cover"
-            suppressHydrationWarning={true}
           >
             <source src="/videos/banner.webm" type="video/webm" />
-            Your browser does not support the video tag.
           </video>
-          {/* Video Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#2d1b69]/60 via-[#241940]/50 to-[#1e1537]/60"></div>
+          
+          {/* Gradient Overlay */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#2d1b69]/80 via-[#241940]/70 to-[#1e1537]/80"></div>
+          
+          {/* Subtle dot pattern overlay */}
+          <div className="absolute inset-0 bg-pattern-dots opacity-30"></div>
         </div>
 
         {/* Floating Security Icons */}
@@ -64,11 +66,22 @@ export default function Home() {
       </section>
 
       {/* Protecting Essential Industries Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="container mx-auto px-4">
+      <section className="py-16 bg-subtle-gray relative overflow-hidden">
+        {/* Subtle Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-10 right-20 w-24 h-24 bg-gradient-to-br from-cyan-100/30 to-blue-100/30 rounded-full blur-2xl animate-pulse"></div>
+          <div className="absolute bottom-20 left-10 w-32 h-32 bg-gradient-to-br from-purple-100/20 to-indigo-100/20 rounded-full blur-3xl"></div>
+          <div className="absolute top-1/2 left-1/4 w-16 h-16 bg-gradient-to-br from-green-100/25 to-teal-100/25 rounded-full blur-xl animate-pulse" style={{animationDelay: '2s'}}></div>
+          
+          {/* Geometric shapes */}
+          <div className="absolute top-20 left-1/3 w-8 h-8 border border-cyan-200/30 rotate-45 animate-spin" style={{animationDuration: '20s'}}></div>
+          <div className="absolute bottom-40 right-1/3 w-6 h-6 border border-purple-200/25 rounded-full animate-bounce" style={{animationDelay: '1s'}}></div>
+        </div>
+        
+        <div className="container mx-auto px-4 text-center relative z-10">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#241940] mb-4">Protecting Essential Industries</h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+            <p className="text-xl text-gray-enhanced max-w-4xl mx-auto">
               SBM Tech is the trusted cyber security partner for operators of essential services. We provide 
               end-to-end cyber security capabilities that help our clients overcome their security challenges, 
               allowing them to operate safely and securely.
@@ -189,8 +202,23 @@ export default function Home() {
       </section>
 
       {/* Speak to us Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-subtle-blue relative overflow-hidden">
+        {/* Subtle Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-20 left-10 w-28 h-28 bg-gradient-to-br from-blue-100/25 to-cyan-100/25 rounded-full blur-3xl"></div>
+          <div className="absolute bottom-10 right-20 w-20 h-20 bg-gradient-to-br from-indigo-100/30 to-purple-100/30 rounded-full blur-2xl animate-pulse"></div>
+          <div className="absolute top-1/3 right-1/4 w-12 h-12 bg-gradient-to-br from-teal-100/20 to-blue-100/20 rounded-full blur-xl"></div>
+          
+          {/* Floating icons */}
+          <div className="absolute top-32 right-10 w-6 h-6 text-cyan-300/40 animate-bounce" style={{animationDelay: '1.5s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1Z"/></svg>
+          </div>
+          <div className="absolute bottom-32 left-16 w-5 h-5 text-blue-300/35 animate-pulse" style={{animationDelay: '3s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.5 16,12.1 16,12.7V16.2C16,16.8 15.4,17.3 14.8,17.3H9.2C8.6,17.3 8,16.8 8,16.2V12.7C8,12.1 8.6,11.5 9.2,11.5V10C9.2,8.6 10.6,7 12,7Z"/></svg>
+          </div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content - Team Image Placeholder */}
             <div className="relative">
@@ -211,7 +239,7 @@ export default function Home() {
               <h2 className="text-4xl lg:text-5xl font-bold text-[#241940] mb-6">
                 Speak to our Trusted Team
               </h2>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              <p className="text-xl text-gray-enhanced mb-8 leading-relaxed">
                 Embark on a journey to increase your cyber resilience, improve your cybersecurity posture, and 
                 reduce your cyber security risk with our comprehensive Security Advisory services.
               </p>

@@ -18,7 +18,7 @@ export default function ManagedSecurityServices() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/cyber-security-consultancy-banner.jpg"
+            src="/images/managed-security-services-banner.webp"
             alt="Managed Security Services Background"
             fill
             className="object-cover"
@@ -71,10 +71,30 @@ export default function ManagedSecurityServices() {
       </section>
 
       {/* What is Managed Security Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
-        {/* Subtle Background Elements */}
-        <div className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-cyan-100/30 to-purple-100/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-10 w-24 h-24 bg-gradient-to-br from-blue-100/40 to-indigo-100/40 rounded-full blur-2xl"></div>
+      <section className="py-24 bg-subtle-blue relative overflow-hidden">
+        {/* Enhanced Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-20 right-20 w-36 h-36 bg-gradient-to-br from-blue-100/25 to-cyan-100/25 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-16 left-16 w-28 h-28 bg-gradient-to-br from-purple-100/20 to-indigo-100/20 rounded-full blur-2xl"></div>
+          <div className="absolute top-1/2 left-1/4 w-22 h-22 bg-gradient-to-br from-teal-100/30 to-green-100/30 rounded-full blur-xl animate-pulse" style={{animationDelay: '1.8s'}}></div>
+          
+          {/* Managed security themed floating elements */}
+          <div className="absolute top-32 right-1/4 w-6 h-6 text-blue-300/40 animate-bounce" style={{animationDelay: '1s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1Z"/></svg>
+          </div>
+          <div className="absolute bottom-32 left-1/3 w-5 h-5 text-cyan-300/35 animate-pulse" style={{animationDelay: '2s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9l-5.91 5.74L17.18 22 12 19.27 6.82 22l1.09-7.26L2 9l6.91-1.74L12 2z"/></svg>
+          </div>
+          <div className="absolute top-2/3 right-1/6 w-4 h-4 text-indigo-300/30 animate-bounce" style={{animationDelay: '2.5s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42C17.99 7.86 19 9.81 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.19 1.01-4.14 2.58-5.42L6.17 5.17C4.23 6.82 3 9.26 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z"/></svg>
+          </div>
+          
+          {/* Abstract shapes for depth */}
+          <div className="absolute top-44 left-1/5 w-3 h-3 bg-blue-300/50 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+          <div className="absolute bottom-52 right-1/3 w-5 h-5 border border-cyan-300/40 rotate-45 animate-spin" style={{animationDuration: '20s'}}></div>
+          <div className="absolute top-1/4 left-1/6 w-2 h-2 bg-indigo-300/45 rounded-full animate-bounce" style={{animationDelay: '2.2s'}}></div>
+          <div className="absolute bottom-2/3 right-1/5 w-6 h-6 border border-blue-300/30 rounded-full animate-pulse" style={{animationDelay: '3s'}}></div>
+        </div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -102,10 +122,10 @@ export default function ManagedSecurityServices() {
             <div className="relative">
               <div className="relative group">
                 <Image 
-                  src="/images/business-image.jpg" 
+                  src="/images/managed-security.jpg" 
                   alt="Managed Security Services" 
-                  width={600}
-                  height={400}
+                  width={800}
+                  height={600}
                   className="rounded-3xl shadow-2xl group-hover:shadow-3xl transition-shadow duration-500" 
                 />
                 {/* Enhanced Decorative Elements */}
@@ -141,10 +161,10 @@ export default function ManagedSecurityServices() {
             <div className="relative order-2 lg:order-1">
               <div className="relative group">
                 <Image 
-                  src="/images/team-image.jpg" 
+                  src="/images/securing.avif" 
                   alt="Security Operations Team" 
-                  width={600}
-                  height={400}
+                  width={800}
+                  height={600}
                   className="rounded-3xl shadow-2xl group-hover:shadow-3xl transition-shadow duration-500" 
                 />
                 {/* Enhanced Decorative Elements */}

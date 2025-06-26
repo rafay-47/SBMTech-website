@@ -23,3 +23,133 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+/* Subtle background variations for sections */
+.bg-subtle-gray {
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.bg-subtle-blue {
+  background: linear-gradient(135deg, #fefeff 0%, #f0f9ff 100%);
+}
+
+.bg-subtle-purple {
+  background: linear-gradient(135deg, #fefbff 0%, #f9f5ff 100%);
+}
+
+.bg-subtle-cyan {
+  background: linear-gradient(135deg, #fefffe 0%, #f0fdfa 100%);
+}
+
+/* Pattern backgrounds for visual interest */
+.bg-pattern-dots {
+  background-image: radial-gradient(circle at 25px 25px, rgba(59, 130, 246, 0.1) 2px, transparent 2px);
+  background-size: 50px 50px;
+}
+
+.bg-pattern-grid {
+  background-image: linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-pattern-diagonal {
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 10px,
+    rgba(59, 130, 246, 0.03) 10px,
+    rgba(59, 130, 246, 0.03) 20px
+  );
+}
+
+/* Enhanced card backgrounds with gradients */
+.card-bg-cyber {
+  background: linear-gradient(135deg, rgba(36, 25, 64, 0.02) 0%, rgba(45, 27, 105, 0.02) 100%);
+}
+
+.card-bg-data {
+  background: linear-gradient(135deg, rgba(139, 69, 19, 0.02) 0%, rgba(168, 85, 247, 0.02) 100%);
+}
+
+.card-bg-managed {
+  background: linear-gradient(135deg, rgba(6, 182, 212, 0.02) 0%, rgba(59, 130, 246, 0.02) 100%);
+}
+
+.card-bg-pentest {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.02) 0%, rgba(34, 197, 94, 0.02) 100%);
+}
+
+/* Floating animation keyframes */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(2deg); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.1); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+/* Enhanced focus states */
+.focus-enhanced:focus {
+  outline: 2px solid #06b6d4;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 4px rgba(6, 182, 212, 0.1);
+}
+
+/* Enhanced hover effects */
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced text colors */
+.text-gray-enhanced {
+  color: #374151;
+}
+
+/* Gradient text utilities */
+.text-gradient-cyber {
+  background: linear-gradient(135deg, #06b6d4, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-success {
+  background: linear-gradient(135deg, #10b981, #059669);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Section background gradients */
+.section-bg-gradient-1 {
+  background: linear-gradient(135deg, #f8fafc 0%, #f0f9ff 50%, #f8fafc 100%);
+}
+
+.section-bg-gradient-2 {
+  background: linear-gradient(135deg, #fefbff 0%, #f0fdfa 50%, #fefbff 100%);
+}
+
+.section-bg-gradient-3 {
+  background: linear-gradient(135deg, #fefeff 0%, #f9f5ff 50%, #fefeff 100%);
+}

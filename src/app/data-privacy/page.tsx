@@ -18,7 +18,7 @@ export default function DataPrivacyServices() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/cyber-security-consultancy-banner.jpg"
+            src="/images/data-privacy-banner.webp"
             alt="Data Privacy Services Background"
             fill
             className="object-cover"
@@ -71,10 +71,30 @@ export default function DataPrivacyServices() {
       </section>
 
       {/* Closing the Skills Gap Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
-        {/* Subtle Background Elements */}
-        <div className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-cyan-100/30 to-purple-100/30 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-10 w-24 h-24 bg-gradient-to-br from-blue-100/40 to-indigo-100/40 rounded-full blur-2xl"></div>
+      <section className="py-24 bg-subtle-purple relative overflow-hidden">
+        {/* Enhanced Background Elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-20 right-20 w-40 h-40 bg-gradient-to-br from-purple-100/25 to-indigo-100/25 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-16 left-16 w-32 h-32 bg-gradient-to-br from-cyan-100/20 to-blue-100/20 rounded-full blur-2xl"></div>
+          <div className="absolute top-1/3 left-1/4 w-24 h-24 bg-gradient-to-br from-pink-100/30 to-purple-100/30 rounded-full blur-xl animate-pulse" style={{animationDelay: '1.8s'}}></div>
+          
+          {/* Data privacy themed floating elements */}
+          <div className="absolute top-28 right-1/4 w-6 h-6 text-purple-300/40 animate-bounce" style={{animationDelay: '1s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 1L3 5V11C3 16.55 6.84 21.74 12 23C17.16 21.74 21 16.55 21 11V5L12 1Z"/></svg>
+          </div>
+          <div className="absolute bottom-36 left-1/3 w-5 h-5 text-indigo-300/35 animate-pulse" style={{animationDelay: '2s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11.5C15.4,11.5 16,12.1 16,12.7V16.2C16,16.8 15.4,17.3 14.8,17.3H9.2C8.6,17.3 8,16.8 8,16.2V12.7C8,12.1 8.6,11.5 9.2,11.5V10C9.2,8.6 10.6,7 12,7Z"/></svg>
+          </div>
+          <div className="absolute top-2/3 right-1/6 w-4 h-4 text-pink-300/30 animate-bounce" style={{animationDelay: '2.8s'}}>
+            <svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          
+          {/* Abstract shapes for visual interest */}
+          <div className="absolute top-44 left-1/5 w-3 h-3 bg-purple-300/50 rounded-full animate-pulse" style={{animationDelay: '1.5s'}}></div>
+          <div className="absolute bottom-52 right-1/3 w-5 h-5 border border-indigo-300/40 rotate-45 animate-spin" style={{animationDuration: '18s'}}></div>
+          <div className="absolute top-1/4 left-1/6 w-2 h-2 bg-pink-300/45 rounded-full animate-bounce" style={{animationDelay: '2.2s'}}></div>
+          <div className="absolute bottom-2/3 right-1/5 w-6 h-6 border border-purple-300/30 rounded-full animate-pulse" style={{animationDelay: '3s'}}></div>
+        </div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -90,8 +110,8 @@ export default function DataPrivacyServices() {
                   Closing the Data Privacy <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Skills Gap</span> with Expert Support
                 </h2>
               </div>
-              <div className="text-lg text-gray-600 space-y-6 leading-relaxed">
-                <p className="text-xl text-gray-700">
+              <div className="text-lg text-gray-enhanced space-y-6 leading-relaxed">
+                <p className="text-xl text-gray-enhanced">
                   <strong>Organisations looking to improve their data privacy programmes are often limited by a lack of resource or skills in data protection.</strong>
                 </p>
                 <div className="bg-gradient-to-r from-cyan-50 to-blue-50 border border-cyan-200 rounded-2xl p-6">
@@ -111,10 +131,10 @@ export default function DataPrivacyServices() {
             <div className="relative">
               <div className="relative group">
                 <Image 
-                  src="/images/business-image.jpg" 
+                  src="/images/data-privacy-phone.jpg" 
                   alt="Data Privacy Consultation" 
-                  width={600}
-                  height={400}
+                  width={800}
+                  height={600}
                   className="rounded-3xl shadow-2xl group-hover:shadow-3xl transition-shadow duration-500" 
                 />
                 {/* Enhanced Decorative Elements */}
@@ -422,7 +442,7 @@ export default function DataPrivacyServices() {
               <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8">
                 <div className="relative h-80 bg-gradient-to-br from-[#241940] to-[#2d1b69] rounded-xl overflow-hidden">
                   <Image 
-                    src="/images/team-image.jpg" 
+                    src="/images/data-privacy-team.jpg" 
                     alt="Data Privacy Team" 
                     fill
                     className="object-cover" 
@@ -437,7 +457,7 @@ export default function DataPrivacyServices() {
               <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8">
                 <div className="relative h-80 bg-gradient-to-br from-[#241940] to-[#2d1b69] rounded-xl overflow-hidden">
                   <Image 
-                    src="/images/business-image.jpg" 
+                    src="/images/how-data-privacy-works.webp" 
                     alt="How Data Privacy Works" 
                     fill
                     className="object-cover" 

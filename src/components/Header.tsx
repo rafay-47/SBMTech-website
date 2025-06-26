@@ -34,11 +34,11 @@ export default function Header() {
             </button>
           </div>
           
-          <Link href="tel:+443303110940" className="flex items-center space-x-2 hover:text-cyan-300 transition-colors group">
+          <Link href="tel:+18444383422	" className="flex items-center space-x-2 hover:text-cyan-300 transition-colors group">
             <svg className="w-4 h-4 text-cyan-400 group-hover:text-cyan-300 transition-colors drop-shadow-lg" fill="currentColor" viewBox="0 0 16 17">
               <path d="M0 1.5L4.5 0.5L7 5L4.375 7.09375C5.5 9.25 7.25 11 9.40625 12.125L11.5 9.5L16 12L15 16.5H14C6.25 16.5 0 10.25 0 2.5V1.5Z"/>
             </svg>
-            <span className="font-medium">+44 (0)3303 110 940</span>
+            <span className="font-medium">+1 (844) 438-3422</span>
           </Link>
         </div>
       </div>
@@ -66,7 +66,7 @@ export default function Header() {
               {/* Services Dropdown */}
               <div className="relative group">
                 <button 
-                  className="flex items-center space-x-2 px-4 py-2 text-white hover:text-cyan-300 transition-colors font-medium"
+                  className="flex items-center space-x-2 px-4 py-2 text-white hover:text-cyan-300 transition-colors font-medium focus-enhanced"
                   onMouseEnter={() => setActiveDropdown('services')}
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
@@ -84,7 +84,7 @@ export default function Header() {
               </div>
 
               {/* Other Navigation Items */}
-              <Link href="/about-us" className="px-4 py-2 text-white hover:text-cyan-300 transition-colors font-medium">
+              <Link href="/about-us" className="px-4 py-2 text-white hover:text-cyan-300 transition-colors font-medium focus-enhanced">
                 Why SBM Tech?
               </Link>
               
