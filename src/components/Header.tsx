@@ -123,9 +123,9 @@ export default function Header() {
               <div className="px-4 py-6 space-y-4">
                 <Link href="/services" className="block text-white hover:text-cyan-300 py-2 font-medium">Services</Link>
                 <Link href="/why-sbm-tech" className="block text-white hover:text-cyan-300 py-2 font-medium">Why SBM Tech?</Link>
-                <Link href="/industries" className="block text-white hover:text-cyan-300 py-2 font-medium">Industries</Link>
+                {/* <Link href="/industries" className="block text-white hover:text-cyan-300 py-2 font-medium">Industries</Link>
                 <Link href="/insights" className="block text-white hover:text-cyan-300 py-2 font-medium">Insights</Link>
-                <Link href="/webinars-events" className="block text-white hover:text-cyan-300 py-2 font-medium">Webinars & Events</Link>
+                <Link href="/webinars-events" className="block text-white hover:text-cyan-300 py-2 font-medium">Webinars & Events</Link> */}
                 <Link href="/contact-us" className="block bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-2 rounded-full text-center font-medium">
                   Contact Us
                 </Link>
