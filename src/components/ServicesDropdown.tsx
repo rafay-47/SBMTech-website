@@ -120,14 +120,21 @@ interface ServicesDropdownProps {
   isOpen: boolean;
   onMouseEnter: () => void;
   onMouseLeave: () => void;
+  onLinkClick?: () => void;
 }
 
-export default function ServicesDropdown({ isOpen, onMouseEnter, onMouseLeave }: ServicesDropdownProps) {
+export default function ServicesDropdown({ isOpen, onMouseEnter, onMouseLeave, onLinkClick }: ServicesDropdownProps) {
   const [activeCategory, setActiveCategory] = useState<string>('cyber-security-consultancy');
 
   if (!isOpen) return null;
 
   const activeCategoryData = serviceCategories.find(cat => cat.id === activeCategory);
+
+  const handleLinkClick = () => {
+    if (onLinkClick) {
+      onLinkClick();
+    }
+  };
 
   return (
     <div 
@@ -185,6 +192,7 @@ export default function ServicesDropdown({ isOpen, onMouseEnter, onMouseLeave }:
                 <Link 
                   href={`/${activeCategoryData.id}`} 
                   className="inline-flex items-center text-xl font-bold text-white hover:text-cyan-300 transition-colors mb-3 group"
+                  onClick={handleLinkClick}
                 >
                   <span>{activeCategoryData.title} Overview</span>
                   <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">
@@ -202,11 +210,15 @@ export default function ServicesDropdown({ isOpen, onMouseEnter, onMouseLeave }:
               <div className="grid grid-cols-2 gap-x-8 gap-y-2">
                 {activeCategoryData.services.map((service, index) => (
                   <div key={index} className="group">
-                    <div className="block py-2 px-3 rounded-lg hover:bg-[#2d1b69]/30 transition-colors">
+                    <Link 
+                      href={service.href}
+                      className="block py-2 px-3 rounded-lg hover:bg-[#2d1b69]/30 transition-colors"
+                      onClick={handleLinkClick}
+                    >
                       <span className="text-sm text-gray-300 group-hover:text-white group-hover:font-medium transition-all">
                         {service.title}
                       </span>
-                    </div>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -216,6 +228,7 @@ export default function ServicesDropdown({ isOpen, onMouseEnter, onMouseLeave }:
                 <Link 
                   href="/services" 
                   className="inline-flex items-center text-white hover:text-cyan-300 font-medium transition-colors group"
+                  onClick={handleLinkClick}
                 >
                   <span>Overview of all Services</span>
                   <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="currentColor" viewBox="0 0 24 24">

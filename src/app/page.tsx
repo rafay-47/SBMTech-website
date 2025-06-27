@@ -41,7 +41,7 @@ export default function Home() {
 
         <div className="container mx-auto px-4 text-center relative z-30 w-full">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white via-cyan-100 to-blue-200 bg-clip-text text-transparent">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-cyan-100 to-blue-200 bg-clip-text text-transparent leading-tight">
               Secure Your Digital Future with SBM Tech
             </h1>
             <p className="text-xl mb-8 text-gray-300 leading-relaxed">
@@ -225,7 +225,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-gray-100 to-gray-200 rounded-2xl p-8">
                                 <div className="relative h-80 bg-gradient-to-br from-[#241940] to-[#2d1b69] rounded-xl overflow-hidden">
                   <Image 
-                    src="/images/team-image.jpg" 
+                    src="/images/team-image.png" 
                     alt="Professional Team Image" 
                     fill
                     className="object-cover" 

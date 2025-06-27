@@ -8,9 +8,24 @@ import ServicesDropdown from './ServicesDropdown';
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
+    setIsMobileServicesOpen(false); // Close services dropdown when mobile menu toggles
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+    setIsMobileServicesOpen(false);
+  };
+
+  const closeDesktopDropdown = () => {
+    setActiveDropdown(null);
+  };
+
+  const toggleMobileServices = () => {
+    setIsMobileServicesOpen(!isMobileServicesOpen);
   };
 
   return (
@@ -18,12 +33,10 @@ export default function Header() {
       {/* Top Bar */}
       <div className="text-white text-sm py-2 border-b border-white/10" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>
         <div className="container mx-auto px-4 flex justify-end items-center space-x-6">
-          <Link href="/24x7-incident-response" className="flex items-center space-x-2 hover:text-cyan-300 transition-colors group">
-            <svg className="w-4 h-4 text-yellow-400 group-hover:text-yellow-300 transition-colors drop-shadow-lg" fill="currentColor" viewBox="0 0 16 15">
-              <path d="M0.84375 13L8 0.5L8.84375 2.03125L15.125 13L16 14.5H0L0.84375 13ZM13.4062 13L8 3.53125L2.5625 13H13.4062ZM7.25 6H8.75V9.5H7.25V6ZM8.75 12H7.25V10.5H8.75V12Z"/>
-            </svg>
-            <span className="font-medium">24/7 Incident Response</span>
-          </Link>
+          <svg className="w-4 h-4 text-yellow-400 group-hover:text-yellow-300 transition-colors drop-shadow-lg" fill="currentColor" viewBox="0 0 16 15">
+            <path d="M0.84375 13L8 0.5L8.84375 2.03125L15.125 13L16 14.5H0L0.84375 13ZM13.4062 13L8 3.53125L2.5625 13H13.4062ZM7.25 6H8.75V9.5H7.25V6ZM8.75 12H7.25V10.5H8.75V12Z"/>
+          </svg>
+          <span className="font-medium">24/7 Incident Response</span>
           
           <div className="relative">
             <button className="flex items-center space-x-1 px-3 py-1 rounded border border-white/30 hover:border-white/50 transition-colors backdrop-blur-sm bg-black/20">
@@ -49,7 +62,7 @@ export default function Header() {
         <div className="container mx-auto px-4 relative z-10 overflow-visible" style={{textShadow: '1px 1px 2px rgba(0,0,0,0.8)'}}>
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
-            <Link href="/" className="flex items-center group">
+            <Link href="/" className="flex items-center group" onClick={closeMobileMenu}>
               <div className="relative drop-shadow-lg">
                 <Image 
                   src="/images/company-logo.ico" 
@@ -80,6 +93,7 @@ export default function Header() {
                   isOpen={activeDropdown === 'services'}
                   onMouseEnter={() => setActiveDropdown('services')}
                   onMouseLeave={() => setActiveDropdown(null)}
+                  onLinkClick={closeDesktopDropdown}
                 />
               </div>
 
@@ -121,12 +135,50 @@ export default function Header() {
           {isMobileMenuOpen && (
             <div className="lg:hidden bg-[#1a1329] rounded-lg mb-4 border border-purple-800/30">
               <div className="px-4 py-6 space-y-4">
-                <Link href="/services" className="block text-white hover:text-cyan-300 py-2 font-medium">Services</Link>
-                <Link href="/why-sbm-tech" className="block text-white hover:text-cyan-300 py-2 font-medium">Why SBM Tech?</Link>
-                {/* <Link href="/industries" className="block text-white hover:text-cyan-300 py-2 font-medium">Industries</Link>
-                <Link href="/insights" className="block text-white hover:text-cyan-300 py-2 font-medium">Insights</Link>
-                <Link href="/webinars-events" className="block text-white hover:text-cyan-300 py-2 font-medium">Webinars & Events</Link> */}
-                <Link href="/contact-us" className="block bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-2 rounded-full text-center font-medium">
+                {/* Mobile Services Dropdown */}
+                <div>
+                  <button 
+                    onClick={toggleMobileServices}
+                    className="flex items-center justify-between w-full text-white hover:text-cyan-300 py-2 font-medium text-left"
+                  >
+                    <span>Services</span>
+                    <svg 
+                      className={`w-4 h-4 transform transition-transform ${isMobileServicesOpen ? 'rotate-180' : ''}`} 
+                      fill="currentColor" 
+                      viewBox="0 0 8 4"
+                    >
+                      <path d="M0 4H8L4 0L0 4Z"/>
+                    </svg>
+                  </button>
+                  
+                  {isMobileServicesOpen && (
+                    <div className="mt-2 pl-4 space-y-2">
+                      <Link href="/cyber-security-consultancy" onClick={closeMobileMenu} className="block text-gray-300 hover:text-cyan-300 py-1 text-sm">
+                        Cyber Security Consultancy
+                      </Link>
+                      <Link href="/managed-security-services" onClick={closeMobileMenu} className="block text-gray-300 hover:text-cyan-300 py-1 text-sm">
+                        Managed Security Services
+                      </Link>
+                      <Link href="/data-privacy" onClick={closeMobileMenu} className="block text-gray-300 hover:text-cyan-300 py-1 text-sm">
+                        Data Privacy
+                      </Link>
+                      <Link href="/penetration-testing" onClick={closeMobileMenu} className="block text-gray-300 hover:text-cyan-300 py-1 text-sm">
+                        Penetration Testing
+                      </Link>
+                      <Link href="/services" onClick={closeMobileMenu} className="block text-cyan-400 hover:text-cyan-300 py-1 text-sm font-medium">
+                        All Services →
+                      </Link>
+                    </div>
+                  )}
+                </div>
+                
+                <Link href="/about-us" onClick={closeMobileMenu} className="block text-white hover:text-cyan-300 py-2 font-medium">
+                  Why SBM Tech?
+                </Link>
+                {/* <Link href="/industries" onClick={closeMobileMenu} className="block text-white hover:text-cyan-300 py-2 font-medium">Industries</Link>
+                <Link href="/insights" onClick={closeMobileMenu} className="block text-white hover:text-cyan-300 py-2 font-medium">Insights</Link>
+                <Link href="/webinars-events" onClick={closeMobileMenu} className="block text-white hover:text-cyan-300 py-2 font-medium">Webinars & Events</Link> */}
+                <Link href="/contact-us" onClick={closeMobileMenu} className="block bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-2 rounded-full text-center font-medium">
                   Contact Us
                 </Link>
               </div>

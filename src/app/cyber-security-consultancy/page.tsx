@@ -49,7 +49,7 @@ export default function CyberSecurityConsultancy() {
 
         <div className="container mx-auto px-4 text-center relative z-30 w-full">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-6xl font-bold mb-6 bg-gradient-to-r from-white via-cyan-100 to-blue-200 bg-clip-text text-transparent h-[4.5rem]">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-cyan-100 to-blue-200 bg-clip-text text-transparent leading-tight">
               Cyber Security Consultancy
             </h1>
             <p className="text-xl mb-8 text-gray-300 leading-relaxed">
