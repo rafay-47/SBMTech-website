@@ -161,7 +161,7 @@ export default function Reviews() {
 
             {/* Reviews Grid */}
             <div className="grid md:grid-cols-3 gap-6">
-              {visibleReviews.map((review, index) => (
+              {visibleReviews.map((review) => (
                 <div
                   key={review.id}
                   className="bg-white/10 backdrop-blur-sm rounded-xl p-6 hover:bg-white/15 transition-all duration-300 border border-white/20"

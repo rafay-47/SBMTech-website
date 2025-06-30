@@ -24,7 +24,7 @@ export default function NewsCard({ news }: NewsCardProps) {
         day: 'numeric',
         year: 'numeric'
       });
-    } catch (_) {
+    } catch {
       return 'Recent';
     }
   };
@@ -79,11 +79,13 @@ export default function NewsCard({ news }: NewsCardProps) {
               className="object-cover group-hover:scale-105 transition-transform duration-300"
             />
           ) : (
-            // Use regular img tag for external images to avoid domain configuration issues
-            <img
+            // Use Next.js Image for external images with unoptimized flag
+            <Image
               src={news.imageUrl}
               alt={news.title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              fill
+              className="object-cover group-hover:scale-105 transition-transform duration-300"
+              unoptimized
               onError={(e) => {
                 // Fallback to default image if the external image fails to load
                 const target = e.target as HTMLImageElement;
