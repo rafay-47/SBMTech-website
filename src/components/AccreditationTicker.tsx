@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
+import Image from 'next/image';
 
 export default function AccreditationTicker() {
   const tickerRef = useRef<HTMLDivElement>(null);
@@ -51,16 +52,16 @@ export default function AccreditationTicker() {
               {/* First set of logos */}
               {accreditations.map((accreditation, index) => (
                 <div key={index} className="flex-shrink-0 h-16 flex items-center">
-                  <div className="w-24 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                    <img src={accreditation.image} alt={accreditation.name} className="w-full h-full object-contain" />
+                  <div className="w-24 h-12 bg-gray-100 rounded-lg flex items-center justify-center relative">
+                    <Image src={accreditation.image} alt={accreditation.name} fill className="object-contain" />
                   </div>
                 </div>
               ))}
               {/* Duplicate set for seamless loop */}
               {accreditations.map((accreditation, index) => (
                 <div key={`duplicate-${index}`} className="flex-shrink-0 h-16 flex items-center">
-                  <div className="w-24 h-12 bg-gray-100 rounded-lg flex items-center justify-center">
-                    <img src={accreditation.image} alt={accreditation.name} className="w-full h-full object-contain" />
+                  <div className="w-24 h-12 bg-gray-100 rounded-lg flex items-center justify-center relative">
+                    <Image src={accreditation.image} alt={accreditation.name} fill className="object-contain" />
                   </div>
                 </div>
               ))}

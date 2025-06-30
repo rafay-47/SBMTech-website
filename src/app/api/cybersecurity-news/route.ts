@@ -210,10 +210,18 @@ const RSS_FEEDS = [
 ];
 
 // Simple XML parser for RSS feeds with improved CDATA handling
-function parseXML(xmlString: string): any {
+interface ParsedItem {
+  title: string;
+  description: string;
+  link: string;
+  pubDate: string;
+  imageUrl?: string;
+}
+
+function parseXML(xmlString: string): ParsedItem[] {
   try {
     // This is a basic XML parser - in production, you might want to use a proper XML parsing library
-    const items: any[] = [];
+    const items: ParsedItem[] = [];
     
     // Extract items from RSS feed
     const itemMatches = xmlString.match(/<item[^>]*>([\s\S]*?)<\/item>/gi);
@@ -391,7 +399,7 @@ async function fetchRSSFeed(feedUrl: string, source: string, category: string): 
       return fallbackImages[sourceName as keyof typeof fallbackImages] || '/images/cyber-security-consultancy-banner.jpg';
     };
 
-    return items.slice(0, 5).map((item: any) => ({
+    return items.slice(0, 5).map((item: ParsedItem) => ({
       title: item.title,
       description: item.description,
       link: item.link,

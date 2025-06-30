@@ -24,7 +24,7 @@ export default function NewsCard({ news }: NewsCardProps) {
         day: 'numeric',
         year: 'numeric'
       });
-    } catch (error) {
+    } catch (_) {
       return 'Recent';
     }
   };

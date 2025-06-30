@@ -58,7 +58,6 @@ export default function CyberSecurityNews() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [lastUpdated, setLastUpdated] = useState<string>('');
-  const [refreshing, setRefreshing] = useState(false);
 
   useEffect(() => {
     // Fetch news immediately on mount
@@ -76,8 +75,6 @@ export default function CyberSecurityNews() {
     try {
       if (!silent) {
         setLoading(true);
-      } else {
-        setRefreshing(true);
       }
       
       const fetchStartTime = Date.now();
@@ -124,7 +121,6 @@ export default function CyberSecurityNews() {
       ]);
     } finally {
       setLoading(false);
-      setRefreshing(false);
     }
   };
 

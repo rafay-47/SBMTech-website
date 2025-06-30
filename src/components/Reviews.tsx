@@ -126,10 +126,10 @@ export default function Reviews() {
           {/* Left Content */}
           <div className="lg:col-span-4">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-cyan-100 to-blue-200 bg-clip-text text-transparent leading-tight">
-              We're Committed To Your Success
+              We&apos;re Committed To Your Success
             </h2>
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-              With the growing need for robust cybersecurity solutions, we're here to keep your business secure and ahead of potential threats. Focus on your business; we'll handle the cybersecurity.
+              With the growing need for robust cybersecurity solutions, we&apos;re here to keep your business secure and ahead of potential threats. Focus on your business; we&apos;ll handle the cybersecurity.
             </p>
             {/* <button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-xl">
               Hear From Our Customers
@@ -193,12 +193,12 @@ export default function Reviews() {
 
             {/* Pagination Dots */}
             <div className="flex justify-center mt-8 space-x-2">
-              {Array.from({ length: Math.ceil(REVIEWS.length / reviewsPerPage) }, (_, index) => (
+              {Array.from({ length: Math.ceil(REVIEWS.length / reviewsPerPage) }, (_, dotIndex) => (
                 <button
-                  key={index}
-                  onClick={() => setCurrentIndex(index * reviewsPerPage)}
+                  key={dotIndex}
+                  onClick={() => setCurrentIndex(dotIndex * reviewsPerPage)}
                   className={`w-3 h-3 rounded-full transition-all ${
-                    Math.floor(currentIndex / reviewsPerPage) === index
+                    Math.floor(currentIndex / reviewsPerPage) === dotIndex
                       ? 'bg-cyan-400'
                       : 'bg-white/30 hover:bg-white/50'
                   }`}
