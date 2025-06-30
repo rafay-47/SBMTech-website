@@ -122,7 +122,7 @@ export default function Services() {
           </div>
 
           {/* Service Category Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 mb-16">
             <ServiceCategoryCard
               title="Cyber Security Consultancy"
               description="Our services cover on-premise, cloud and operational technology environments and can be leveraged to support transformation programmes or meet specific industry requirements."
@@ -145,6 +145,12 @@ export default function Services() {
               title="Penetration Testing"
               description="Assess the security of your organisation&apos;s network from an internal and external perspective by completing a penetration test with SBM Tech&apos;s highly certified and experienced offensive security experts."
               href="/penetration-testing"
+            />
+            
+            <ServiceCategoryCard
+              title="Software Development"
+              description="Transform your business with custom software solutions. From web applications to mobile apps and enterprise software, we deliver cutting-edge technology solutions tailored to your needs."
+              href="/software-development"
             />
           </div>
 

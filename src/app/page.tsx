@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import ServiceCard from "@/components/ServiceCard";
+import CyberSecurityNews from "@/components/CyberSecurityNews";
+import Reviews from "@/components/Reviews";
+import AccreditationTicker from "@/components/AccreditationTicker";
 
 export default function Home() {
   return (
@@ -64,6 +67,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Accreditation Ticker Section */}
+      <AccreditationTicker />
 
       {/* Protecting Essential Industries Section */}
       <section className="py-16 bg-subtle-gray relative overflow-hidden">
@@ -201,6 +207,8 @@ export default function Home() {
         </div>
       </section>
 
+
+
       {/* Speak to us Section */}
       <section className="py-20 bg-subtle-blue relative overflow-hidden">
         {/* Subtle Background Elements */}
@@ -253,8 +261,11 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Reviews Section */}
+      <Reviews />
 
-
+      {/* Cybersecurity News Section */}
+      <CyberSecurityNews />
     </>
   );
 }

@@ -15,6 +15,7 @@ export default function Footer() {
               <li><Link href="/managed-security-services" className="text-gray-300 hover:text-white transition-colors hover-lift focus-enhanced">Managed Security</Link></li>
               <li><Link href="/data-privacy" className="text-gray-300 hover:text-white transition-colors hover-lift focus-enhanced">Data Privacy</Link></li>
               <li><Link href="/penetration-testing" className="text-gray-300 hover:text-white transition-colors hover-lift focus-enhanced">Penetration Testing</Link></li>
+              <li><Link href="/software-development" className="text-gray-300 hover:text-white transition-colors hover-lift focus-enhanced">Software Development</Link></li>
             </ul>
           </div>
 

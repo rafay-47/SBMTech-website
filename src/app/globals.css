@@ -153,3 +153,18 @@ body {
 .section-bg-gradient-3 {
   background: linear-gradient(135deg, #fefeff 0%, #f9f5ff 50%, #fefeff 100%);
 }
+
+/* Line clamp utilities for text truncation */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

@@ -165,6 +165,9 @@ export default function Header() {
                       <Link href="/penetration-testing" onClick={closeMobileMenu} className="block text-gray-300 hover:text-cyan-300 py-1 text-sm">
                         Penetration Testing
                       </Link>
+                      <Link href="/software-development" onClick={closeMobileMenu} className="block text-gray-300 hover:text-cyan-300 py-1 text-sm">
+                        Software Development
+                      </Link>
                       <Link href="/services" onClick={closeMobileMenu} className="block text-cyan-400 hover:text-cyan-300 py-1 text-sm font-medium">
                         All Services →
                       </Link>

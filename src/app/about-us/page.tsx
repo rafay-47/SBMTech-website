@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import Reviews from "@/components/Reviews";
 import type { Metadata } from "next";
+import AccreditationTicker from "@/components/AccreditationTicker";
 
 export const metadata: Metadata = {
   title: "About Us | SBM Tech",
@@ -60,6 +62,9 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
+
+      {/* Accreditation Ticker Section */}
+      <AccreditationTicker />
 
       {/* Building a Secure Future Together Section */}
       <section id="why-choose" className="py-24 bg-subtle-blue relative overflow-hidden">
@@ -131,6 +136,10 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
+
+      
+      {/* Reviews Section */}
+      <Reviews />
 
       {/* Mission and Vision Section */}
       <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
