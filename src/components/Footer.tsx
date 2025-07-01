@@ -25,6 +25,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><Link href="/services" className="text-gray-300 hover:text-white transition-colors hover-lift focus-enhanced">Services</Link></li>
               <li><Link href="/about-us" className="text-gray-300 hover:text-white transition-colors hover-lift focus-enhanced">Why SBM Tech</Link></li>
+              <li><Link href="/build-a-plan" className="text-gray-300 hover:text-white transition-colors hover-lift focus-enhanced">Build a Plan</Link></li>
             </ul>
           </div>
 

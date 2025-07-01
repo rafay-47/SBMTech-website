@@ -96,6 +96,11 @@ body {
   50% { opacity: 0.6; transform: scale(1.1); }
 }
 
+@keyframes pulse-subtle {
+  0%, 100% { box-shadow: 0 0 5px rgba(6, 182, 212, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(6, 182, 212, 0.6), 0 0 30px rgba(59, 130, 246, 0.3); }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
@@ -106,6 +111,10 @@ body {
 
 .animate-pulse-glow {
   animation: pulse-glow 4s ease-in-out infinite;
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
 }
 
 /* Enhanced focus states */

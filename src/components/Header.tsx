@@ -102,6 +102,14 @@ export default function Header() {
                 Why SBM Tech?
               </Link>
               
+              <Link href="/build-a-plan" className="relative ml-2 mr-2 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-6 py-2 rounded-full font-semibold transition-all transform hover:scale-105 shadow-lg backdrop-blur-sm border border-purple-400/20 group">
+                <span className="relative z-10 flex items-center">
+                  Build a Plan
+                </span>
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-400/20 to-indigo-500/20 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-indigo-600 rounded-full opacity-20 group-hover:opacity-40 transition-opacity duration-300 blur-sm"></div>
+              </Link>
+              
               {/* <Link href="/industries" className="px-4 py-2 text-white hover:text-cyan-300 transition-colors font-medium">
                 Industries
               </Link>
@@ -115,7 +123,7 @@ export default function Header() {
               </Link> */}
 
               {/* Contact Button */}
-              <Link href="/contact-us" className="ml-4 bg-gradient-to-r from-purple-600/80 to-purple-700/80 hover:from-purple-700 hover:to-purple-800 text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105 shadow-lg backdrop-blur-sm">
+              <Link href="/contact-us" className="ml-4 bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-6 py-2 rounded-full font-medium transition-all transform hover:scale-105 shadow-lg backdrop-blur-sm">
                 Contact Us
               </Link>
             </div>
@@ -178,10 +186,15 @@ export default function Header() {
                 <Link href="/about-us" onClick={closeMobileMenu} className="block text-white hover:text-cyan-300 py-2 font-medium">
                   Why SBM Tech?
                 </Link>
+                <Link href="/build-a-plan" onClick={closeMobileMenu} className="block bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-4 py-3 rounded-lg font-semibold transition-all transform hover:scale-105 shadow-lg border border-purple-400/20 my-2">
+                  <div className="flex items-center justify-center">
+                    Build a Plan
+                  </div>
+                </Link>
                 {/* <Link href="/industries" onClick={closeMobileMenu} className="block text-white hover:text-cyan-300 py-2 font-medium">Industries</Link>
                 <Link href="/insights" onClick={closeMobileMenu} className="block text-white hover:text-cyan-300 py-2 font-medium">Insights</Link>
                 <Link href="/webinars-events" onClick={closeMobileMenu} className="block text-white hover:text-cyan-300 py-2 font-medium">Webinars & Events</Link> */}
-                <Link href="/contact-us" onClick={closeMobileMenu} className="block bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-2 rounded-full text-center font-medium">
+                <Link href="/contact-us" onClick={closeMobileMenu} className="block bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-4 py-2 rounded-full text-center font-medium">
                   Contact Us
                 </Link>
               </div>

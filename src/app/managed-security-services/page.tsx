@@ -371,6 +371,34 @@ export default function ManagedSecurityServices() {
         </div>
       </section>
 
+      {/* Build a Plan CTA Section */}
+      <section className="py-16 bg-gradient-to-br from-green-50 to-cyan-50 relative overflow-hidden">
+        {/* Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-10 right-20 w-28 h-28 bg-gradient-to-br from-green-100/30 to-cyan-100/30 rounded-full blur-2xl"></div>
+          <div className="absolute bottom-10 left-20 w-24 h-24 bg-gradient-to-br from-blue-100/30 to-indigo-100/30 rounded-full blur-xl"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center max-w-4xl mx-auto">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#241940] mb-6 leading-tight">
+              Calculate Your <span className="bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent">Managed Security</span> Investment
+            </h2>
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              Discover the cost of 24/7 security monitoring and expert managed services tailored to your organization's size and requirements.
+            </p>
+            <Link href="/build-a-plan">
+              <button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-10 py-5 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-xl flex items-center gap-3 mx-auto">
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                </svg>
+                Build Your Security Plan
+              </button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Process Section */}
       <ProcessSection />
 
