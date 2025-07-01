@@ -63,7 +63,7 @@ export default function BuildAPlan() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#241940] mb-4">Security Plan Calculator</h2>
             <p className="text-xl text-gray-enhanced max-w-4xl mx-auto">
-              Select the services that match your organization's needs and get instant pricing for your custom cybersecurity solution.
+              Select the services that match your organization&apos;s needs and get instant pricing for your custom cybersecurity solution.
             </p>
           </div>
 

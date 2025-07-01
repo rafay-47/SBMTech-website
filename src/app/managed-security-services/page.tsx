@@ -385,7 +385,7 @@ export default function ManagedSecurityServices() {
               Calculate Your <span className="bg-gradient-to-r from-green-600 to-cyan-600 bg-clip-text text-transparent">Managed Security</span> Investment
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              Discover the cost of 24/7 security monitoring and expert managed services tailored to your organization's size and requirements.
+              Discover the cost of 24/7 security monitoring and expert managed services tailored to your organization&apos;s size and requirements.
             </p>
             <Link href="/build-a-plan">
               <button className="bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white px-10 py-5 rounded-xl font-semibold transition-all transform hover:scale-105 shadow-xl flex items-center gap-3 mx-auto">
@@ -430,7 +430,7 @@ export default function ManagedSecurityServices() {
             {[
               {
                 question: "What Are MSS?",
-                answer: "Managed security services (MSS) provide you with a comprehensive solution to address your cybersecurity threats. As an expert MSSP, we understand the complexities and challenges that businesses face in managing their own security operations. That's why we offer tailored services to help you navigate the ever-evolving landscape of cyber threats. With our managed security services, you can rest assured knowing that your network security is constantly monitored for any potential vulnerabilities or attacks."
+                answer: "Managed security services (MSS) provide you with a comprehensive solution to address your cybersecurity threats. As an expert MSSP, we understand the complexities and challenges that businesses face in managing their own security operations. That&apos;s why we offer tailored services to help you navigate the ever-evolving landscape of cyber threats. With our managed security services, you can rest assured knowing that your network security is constantly monitored for any potential vulnerabilities or attacks."
               },
               {
                 question: "Why Use SBM Tech&apos;s Managed Security Service?",
