@@ -23,25 +23,25 @@ interface PlanState {
 
 // Pricing structure based on temp.html
 const prices = {
-  defianceXDR: 3, // per device
-  managedXDR: 35, // per device
+  defianceXDR: 2, // per device (reduced 10% from 3)
+  managedXDR: 30, // per device (reduced 10% from 35, rounded to nearest 10)
   programManagement: {
-    4: 500,
-    8: 1000,
-    16: 2000,
-    32: 4000
+    4: 450,
+    8: 900,
+    16: 1800,
+    32: 3600
   },
   virtualCiso: {
-    support: 1000,
-    fractional: 5000
+    support: 900,
+    fractional: 4500
   },
-  gapAssessment: 10000, // one-time
-  networkPenTest: 8000, // one-time
-  appPenTest: 10000, // one-time
-  wirelessPenTest: 4000, // one-time
-  emailPhishing: 4000, // one-time
-  vishingCampaigns: 4000, // one-time
-  securityAwareness: 6000 // one-time
+  gapAssessment: 9000, // one-time (reduced 10% from 10000)
+  networkPenTest: 7200, // one-time (reduced 10% from 8000)
+  appPenTest: 9000, // one-time (reduced 10% from 10000)
+  wirelessPenTest: 3600, // one-time (reduced 10% from 4000)
+  emailPhishing: 3600, // one-time (reduced 10% from 4000)
+  vishingCampaigns: 3600, // one-time (reduced 10% from 4000)
+  securityAwareness: 5400 // one-time (reduced 10% from 6000)
 };
 
 // Tooltip information
