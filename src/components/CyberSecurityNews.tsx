@@ -77,14 +77,12 @@ export default function CyberSecurityNews() {
         setLoading(true);
       }
       
-      const fetchStartTime = Date.now();
       //console.log("🚀 Starting news fetch from browser...");
       
       // Add cache-busting parameter for fresh news
       const cacheBuster = `?t=${Date.now()}`;
       const response = await fetch(`/api/cybersecurity-news${cacheBuster}`);
-      const fetchEndTime = Date.now();
-      //console.log(`📡 API response received in ${fetchEndTime - fetchStartTime}ms`);
+      //console.log(`📡 API response received`);
       
       const data: NewsResponse = await response.json();
       // console.log("📊 API Response Data:", {

@@ -338,8 +338,7 @@ async function fetchRSSFeed(feedUrl: string, source: string, category: string): 
     const xmlText = await response.text();
     const items = parseXML(xmlText);
     
-    const fetchTime = Date.now() - startTime;
-    //console.log(`✅ ${source} fetched successfully in ${fetchTime}ms (${items.length} items)`);
+    //console.log(`✅ ${source} fetched successfully in ${Date.now() - startTime}ms (${items.length} items)`);
 
     // Fallback images for different sources using existing cybersecurity images
     const getFallbackImage = (sourceName: string) => {
