@@ -312,7 +312,7 @@ function parseXML(xmlString: string): ParsedItem[] {
 async function fetchRSSFeed(feedUrl: string, source: string, category: string): Promise<NewsItem[]> {
   const startTime = Date.now();
   try {
-    console.log(`Fetching RSS feed from: ${feedUrl}`);
+    //console.log(`Fetching RSS feed from: ${feedUrl}`);
     
     // Create a timeout promise
     const timeoutPromise = new Promise((_, reject) => {
@@ -339,7 +339,7 @@ async function fetchRSSFeed(feedUrl: string, source: string, category: string): 
     const items = parseXML(xmlText);
     
     const fetchTime = Date.now() - startTime;
-    console.log(`✅ ${source} fetched successfully in ${fetchTime}ms (${items.length} items)`);
+    //console.log(`✅ ${source} fetched successfully in ${fetchTime}ms (${items.length} items)`);
 
     // Fallback images for different sources using existing cybersecurity images
     const getFallbackImage = (sourceName: string) => {
@@ -417,7 +417,7 @@ async function fetchRSSFeed(feedUrl: string, source: string, category: string): 
 
 export async function GET() {
   try {
-    console.log('Starting RSS feed fetch...');
+    //console.log('Starting RSS feed fetch...');
     const startTime = Date.now();
     
     // Fetch news from multiple RSS feeds in parallel
@@ -427,7 +427,7 @@ export async function GET() {
 
     const allFeeds = await Promise.allSettled(feedPromises);
     const fetchTime = Date.now() - startTime;
-    console.log(`RSS feeds fetched in ${fetchTime}ms`);
+    //console.log(`RSS feeds fetched in ${fetchTime}ms`);
     
     // Combine all successful feeds
     const allNews: NewsItem[] = [];
@@ -449,7 +449,7 @@ export async function GET() {
     // Return the latest 24 items (increased from 12 due to more sources)
     const latestNews = allNews.slice(0, 24);
     
-    console.log(`Returning ${latestNews.length} news items`);
+    //console.log(`Returning ${latestNews.length} news items`);
 
     return NextResponse.json({
       success: true,

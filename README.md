@@ -34,3 +34,19 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Google Analytics (GA4) setup
+
+This project uses the App Router (app/) — place the Google Analytics Measurement ID in an environment variable and we inject the GA scripts automatically.
+
+1. Create a `.env.local` file in the project root and add:
+
+```bash
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+```
+
+2. The application injects the gtag script from `src/app/layout.tsx` and tracks SPA route changes using a client component `src/components/GoogleAnalytics.tsx`.
+
+3. If you need to disable Google Analytics for local development, set `NEXT_PUBLIC_GA_ID` to an empty value in `.env.local` or omit it entirely. The script is only injected when the env var is set.
+
+For more advanced setups, you can add a consent check before calling `gtag('config', ...)`, set anonymizeIp, or add additional events in the `GoogleAnalytics` client component.

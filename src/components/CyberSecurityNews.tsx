@@ -78,32 +78,32 @@ export default function CyberSecurityNews() {
       }
       
       const fetchStartTime = Date.now();
-      console.log("🚀 Starting news fetch from browser...");
+      //console.log("🚀 Starting news fetch from browser...");
       
       // Add cache-busting parameter for fresh news
       const cacheBuster = `?t=${Date.now()}`;
       const response = await fetch(`/api/cybersecurity-news${cacheBuster}`);
       const fetchEndTime = Date.now();
-      console.log(`📡 API response received in ${fetchEndTime - fetchStartTime}ms`);
+      //console.log(`📡 API response received in ${fetchEndTime - fetchStartTime}ms`);
       
       const data: NewsResponse = await response.json();
-      console.log("📊 API Response Data:", {
-        success: data.success,
-        newsCount: data.news?.length || 0,
-        serverFetchTime: data.fetchTimeMs,
-        totalFeeds: data.totalFeeds,
-        successfulFeeds: data.successfulFeeds
-      });
+      // console.log("📊 API Response Data:", {
+      //   success: data.success,
+      //   newsCount: data.news?.length || 0,
+      //   serverFetchTime: data.fetchTimeMs,
+      //   totalFeeds: data.totalFeeds,
+      //   successfulFeeds: data.successfulFeeds
+      // });
       
       if (data.success) {
         setNews(data.news || []);
         setLastUpdated(data.lastUpdated);
         setError(null);
-        console.log('Successfully set news:', data.news?.length || 0, 'items');
+        //console.log('Successfully set news:', data.news?.length || 0, 'items');
       } else {
         setNews(data.news || []); // Show fallback data
         setError(data.error || 'Failed to fetch news');
-        console.log('API returned error, using fallback data:', data.news?.length || 0);
+        //console.log('API returned error, using fallback data:', data.news?.length || 0);
       }
     } catch (err) {
       console.error('Error fetching news:', err);
@@ -223,7 +223,7 @@ export default function CyberSecurityNews() {
           <>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
               {news.slice(0, 6).map((newsItem, index) => {
-                console.log('Rendering news item:', newsItem);
+                //console.log('Rendering news item:', newsItem);
                 return (
                   <NewsCard key={`${newsItem.source}-${index}-${newsItem.title.substring(0, 20)}`} news={newsItem} />
                 );
